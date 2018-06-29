@@ -1,0 +1,1512 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_eMNTkHt_Eei0Dts_PrkGMQ">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_eUCZ4Ht_Eei0Dts_PrkGMQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_eUDoAHt_Eei0Dts_PrkGMQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+  </elementImport>
+  <elementImport xmi:id="_eUiwMXt_Eei0Dts_PrkGMQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_eP9yMHt_Eei0Dts_PrkGMQ" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_eQJ_cHt_Eei0Dts_PrkGMQ" name="util">
+      <packagedElement xmi:type="uml:Package" xmi:id="_eQJ_cXt_Eei0Dts_PrkGMQ" name="logging">
+        <packagedElement xmi:type="uml:Class" xmi:id="_eQWzwHt_Eei0Dts_PrkGMQ" name="ConsoleHandler">
+          <generalization xmi:id="_eTqmcHt_Eei0Dts_PrkGMQ" general="_eQc6Y3t_Eei0Dts_PrkGMQ"/>
+          <ownedOperation xmi:id="_eT7FIHt_Eei0Dts_PrkGMQ" name="configure" visibility="private"/>
+          <ownedOperation xmi:id="_eT_9oHt_Eei0Dts_PrkGMQ" name="publish" visibility="public">
+            <ownedParameter xmi:id="_eT_9oXt_Eei0Dts_PrkGMQ" name="record" type="_eQbsQXt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eUBLwHt_Eei0Dts_PrkGMQ" name="close" visibility="public"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_eQXa0Ht_Eei0Dts_PrkGMQ" name="ErrorManager">
+          <generalization xmi:id="_eUBy0nt_Eei0Dts_PrkGMQ" general="_eUBy0Xt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eUCZ4Xt_Eei0Dts_PrkGMQ" name="reported" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_eUDoAXt_Eei0Dts_PrkGMQ" name="GENERIC_FAILURE" visibility="public" isStatic="true" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_eUDoAnt_Eei0Dts_PrkGMQ" name="WRITE_FAILURE" visibility="public" isStatic="true" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_eUDoA3t_Eei0Dts_PrkGMQ" name="FLUSH_FAILURE" visibility="public" isStatic="true" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_eUDoBHt_Eei0Dts_PrkGMQ" name="CLOSE_FAILURE" visibility="public" isStatic="true" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_eUEPEHt_Eei0Dts_PrkGMQ" name="OPEN_FAILURE" visibility="public" isStatic="true" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_eUEPEXt_Eei0Dts_PrkGMQ" name="FORMAT_FAILURE" visibility="public" isStatic="true" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedOperation xmi:id="_eUHSYHt_Eei0Dts_PrkGMQ" name="error" visibility="public">
+            <ownedParameter xmi:id="_eUHSYXt_Eei0Dts_PrkGMQ" name="msg" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eUHSYnt_Eei0Dts_PrkGMQ" name="ex" type="_eUGrUXt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eUHSY3t_Eei0Dts_PrkGMQ" name="code">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_eQYB4Ht_Eei0Dts_PrkGMQ" name="FileHandler">
+          <generalization xmi:id="_eUH5cHt_Eei0Dts_PrkGMQ" general="_eQc6Y3t_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eUIggHt_Eei0Dts_PrkGMQ" name="meter" visibility="private" type="_eUH5cnt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eUIggXt_Eei0Dts_PrkGMQ" name="append" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_eUIggnt_Eei0Dts_PrkGMQ" name="limit" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_eUIgg3t_Eei0Dts_PrkGMQ" name="count" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_eUJHkHt_Eei0Dts_PrkGMQ" name="pattern" visibility="private" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eUJHkXt_Eei0Dts_PrkGMQ" name="lockFileName" visibility="private" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eUJuo3t_Eei0Dts_PrkGMQ" name="lockFileChannel" visibility="private" type="_eUJuont_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eULj0Ht_Eei0Dts_PrkGMQ" name="files" visibility="private" type="_eUKVsXt_Eei0Dts_PrkGMQ">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eULj0Xt_Eei0Dts_PrkGMQ" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eULj0nt_Eei0Dts_PrkGMQ"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_eULj03t_Eei0Dts_PrkGMQ" name="MAX_LOCKS" visibility="private" isStatic="true" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_eUMK43t_Eei0Dts_PrkGMQ" name="locks" visibility="private" isStatic="true" type="_eUMK4nt_Eei0Dts_PrkGMQ" isReadOnly="true"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_eQYo8Ht_Eei0Dts_PrkGMQ" name="InitializationErrorManager" visibility="private"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_eQYo8Xt_Eei0Dts_PrkGMQ" name="MeteredStream" visibility="private"/>
+          <ownedOperation xmi:id="_eUQcUHt_Eei0Dts_PrkGMQ" name="open" visibility="private">
+            <ownedParameter xmi:id="_eUQcUXt_Eei0Dts_PrkGMQ" name="fname" type="_eUKVsXt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eUQcUnt_Eei0Dts_PrkGMQ" name="append">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eUQcU3t_Eei0Dts_PrkGMQ" name="configure" visibility="private"/>
+          <ownedOperation xmi:id="_eURqcHt_Eei0Dts_PrkGMQ" name="isParentWritable" visibility="private">
+            <ownedParameter xmi:id="_eURqcXt_Eei0Dts_PrkGMQ" name="path" type="_eURDYXt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eURqcnt_Eei0Dts_PrkGMQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eUSRgHt_Eei0Dts_PrkGMQ" name="openFiles" visibility="private"/>
+          <ownedOperation xmi:id="_eUTfoHt_Eei0Dts_PrkGMQ" name="generate" visibility="private">
+            <ownedParameter xmi:id="_eUTfoXt_Eei0Dts_PrkGMQ" name="pattern" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eUTfont_Eei0Dts_PrkGMQ" name="generation">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_eUTfo3t_Eei0Dts_PrkGMQ" name="unique">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_eUTfpHt_Eei0Dts_PrkGMQ" name="return" type="_eUKVsXt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eUUGsHt_Eei0Dts_PrkGMQ" name="rotate" visibility="private"/>
+          <ownedOperation xmi:id="_eUUtwHt_Eei0Dts_PrkGMQ" name="publish" visibility="public">
+            <ownedParameter xmi:id="_eUUtwXt_Eei0Dts_PrkGMQ" name="record" type="_eQbsQXt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eUVU0Ht_Eei0Dts_PrkGMQ" name="close" visibility="public"/>
+          <ownedOperation xmi:id="_eUV74Ht_Eei0Dts_PrkGMQ" name="isSetUID" visibility="private" isStatic="true">
+            <ownedParameter xmi:id="_eUV74Xt_Eei0Dts_PrkGMQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eUXxEHt_Eei0Dts_PrkGMQ" name="access$100" visibility="package" isStatic="true">
+            <ownedParameter xmi:id="_eUXxEXt_Eei0Dts_PrkGMQ" name="arg0" type="_eQYB4Ht_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eUZmQHt_Eei0Dts_PrkGMQ" name="&lt;clinit>" visibility="package" isStatic="true"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_eQbFMHt_Eei0Dts_PrkGMQ" name="Filter" isAbstract="true">
+          <ownedOperation xmi:id="_eUcCgHt_Eei0Dts_PrkGMQ" name="isLoggable" visibility="public" isAbstract="true">
+            <ownedParameter xmi:id="_eUcCgXt_Eei0Dts_PrkGMQ" name="record" type="_eQbsQXt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eUcCgnt_Eei0Dts_PrkGMQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_eQbsQHt_Eei0Dts_PrkGMQ" name="Formatter" isAbstract="true">
+          <generalization xmi:id="_eUcpkHt_Eei0Dts_PrkGMQ" general="_eUBy0Xt_Eei0Dts_PrkGMQ"/>
+          <ownedOperation xmi:id="_eUfF0Ht_Eei0Dts_PrkGMQ" name="format" visibility="public" isAbstract="true">
+            <ownedParameter xmi:id="_eUfF0Xt_Eei0Dts_PrkGMQ" name="record" type="_eQbsQXt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eUfF0nt_Eei0Dts_PrkGMQ" name="return" type="_eUGrUHt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eUfs4Ht_Eei0Dts_PrkGMQ" name="getHead" visibility="public">
+            <ownedParameter xmi:id="_eUfs4Xt_Eei0Dts_PrkGMQ" name="h" type="_eQgkwHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eUfs4nt_Eei0Dts_PrkGMQ" name="return" type="_eUGrUHt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eUgT8Ht_Eei0Dts_PrkGMQ" name="getTail" visibility="public">
+            <ownedParameter xmi:id="_eUgT8Xt_Eei0Dts_PrkGMQ" name="h" type="_eQgkwHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eUgT8nt_Eei0Dts_PrkGMQ" name="return" type="_eUGrUHt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eUg7AHt_Eei0Dts_PrkGMQ" name="formatMessage" visibility="public">
+            <ownedParameter xmi:id="_eUg7AXt_Eei0Dts_PrkGMQ" name="record" type="_eQbsQXt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eUg7Ant_Eei0Dts_PrkGMQ" name="return" type="_eUGrUHt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_eQbsQXt_Eei0Dts_PrkGMQ" name="LogRecord">
+          <generalization xmi:id="_eUhiEHt_Eei0Dts_PrkGMQ" general="_eUBy0Xt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eUhiFHt_Eei0Dts_PrkGMQ" name="globalSequenceNumber" visibility="private" isStatic="true" type="_eUhiE3t_Eei0Dts_PrkGMQ" isReadOnly="true"/>
+          <ownedAttribute xmi:id="_eUiJIHt_Eei0Dts_PrkGMQ" name="MIN_SEQUENTIAL_THREAD_ID" visibility="private" isStatic="true" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_eUiJInt_Eei0Dts_PrkGMQ" name="nextThreadId" visibility="private" isStatic="true" type="_eUiJIXt_Eei0Dts_PrkGMQ" isReadOnly="true"/>
+          <ownedAttribute xmi:id="_eUiJJnt_Eei0Dts_PrkGMQ" name="threadIds" visibility="private" isStatic="true" type="_eUiJJXt_Eei0Dts_PrkGMQ" isReadOnly="true"/>
+          <ownedAttribute xmi:id="_eUiwMHt_Eei0Dts_PrkGMQ" name="level" visibility="private" type="_eQhL0nt_Eei0Dts_PrkGMQ" association="_eaUoEHt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eUiwMnt_Eei0Dts_PrkGMQ" name="sequenceNumber" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_eUjXQHt_Eei0Dts_PrkGMQ" name="sourceClassName" visibility="private" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eUjXQXt_Eei0Dts_PrkGMQ" name="sourceMethodName" visibility="private" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eUjXQnt_Eei0Dts_PrkGMQ" name="message" visibility="private" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eUjXQ3t_Eei0Dts_PrkGMQ" name="threadID" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_eUjXRHt_Eei0Dts_PrkGMQ" name="millis" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_eUj-UXt_Eei0Dts_PrkGMQ" name="thrown" visibility="private" type="_eUj-UHt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eUj-Unt_Eei0Dts_PrkGMQ" name="loggerName" visibility="private" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eUklYHt_Eei0Dts_PrkGMQ" name="resourceBundleName" visibility="private" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eUklYXt_Eei0Dts_PrkGMQ" name="needToInferCaller" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_eUklYnt_Eei0Dts_PrkGMQ" name="parameters" visibility="private" type="_eUBy0Xt_Eei0Dts_PrkGMQ">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eUklY3t_Eei0Dts_PrkGMQ" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eUklZHt_Eei0Dts_PrkGMQ"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_eUlMcHt_Eei0Dts_PrkGMQ" name="resourceBundle" visibility="private" type="_eUklZXt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eUlMcXt_Eei0Dts_PrkGMQ" name="serialVersionUID" visibility="private" isStatic="true" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+          </ownedAttribute>
+          <ownedOperation xmi:id="_eUnBoHt_Eei0Dts_PrkGMQ" name="defaultThreadID" visibility="private">
+            <ownedParameter xmi:id="_eUnBoXt_Eei0Dts_PrkGMQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eUnosHt_Eei0Dts_PrkGMQ" name="getLoggerName" visibility="public">
+            <ownedParameter xmi:id="_eUnosXt_Eei0Dts_PrkGMQ" name="return" type="_eUGrUHt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eUoPwHt_Eei0Dts_PrkGMQ" name="setLoggerName" visibility="public">
+            <ownedParameter xmi:id="_eUoPwXt_Eei0Dts_PrkGMQ" name="name" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eUoPwnt_Eei0Dts_PrkGMQ" name="getResourceBundle" visibility="public">
+            <ownedParameter xmi:id="_eUoPw3t_Eei0Dts_PrkGMQ" name="return" type="_eUklZXt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eUo20Ht_Eei0Dts_PrkGMQ" name="setResourceBundle" visibility="public">
+            <ownedParameter xmi:id="_eUo20Xt_Eei0Dts_PrkGMQ" name="bundle" type="_eUklZXt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eUpd4Ht_Eei0Dts_PrkGMQ" name="getResourceBundleName" visibility="public">
+            <ownedParameter xmi:id="_eUpd4Xt_Eei0Dts_PrkGMQ" name="return" type="_eUGrUHt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eUpd4nt_Eei0Dts_PrkGMQ" name="setResourceBundleName" visibility="public">
+            <ownedParameter xmi:id="_eUqE8Ht_Eei0Dts_PrkGMQ" name="name" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eUqE8Xt_Eei0Dts_PrkGMQ" name="getLevel" visibility="public">
+            <ownedParameter xmi:id="_eUqE8nt_Eei0Dts_PrkGMQ" name="return" type="_eQhL0nt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eUqsAHt_Eei0Dts_PrkGMQ" name="setLevel" visibility="public">
+            <ownedParameter xmi:id="_eUqsAXt_Eei0Dts_PrkGMQ" name="level" type="_eQhL0nt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eUrTEHt_Eei0Dts_PrkGMQ" name="getSequenceNumber" visibility="public">
+            <ownedParameter xmi:id="_eUrTEXt_Eei0Dts_PrkGMQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eUr6IHt_Eei0Dts_PrkGMQ" name="setSequenceNumber" visibility="public">
+            <ownedParameter xmi:id="_eUr6IXt_Eei0Dts_PrkGMQ" name="seq">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eUr6Int_Eei0Dts_PrkGMQ" name="getSourceClassName" visibility="public">
+            <ownedParameter xmi:id="_eUr6I3t_Eei0Dts_PrkGMQ" name="return" type="_eUGrUHt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eUtIQHt_Eei0Dts_PrkGMQ" name="setSourceClassName" visibility="public">
+            <ownedParameter xmi:id="_eUtIQXt_Eei0Dts_PrkGMQ" name="sourceClassName" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eUtvUHt_Eei0Dts_PrkGMQ" name="getSourceMethodName" visibility="public">
+            <ownedParameter xmi:id="_eUtvUXt_Eei0Dts_PrkGMQ" name="return" type="_eUGrUHt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eUuWYHt_Eei0Dts_PrkGMQ" name="setSourceMethodName" visibility="public">
+            <ownedParameter xmi:id="_eUuWYXt_Eei0Dts_PrkGMQ" name="sourceMethodName" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eUu9cHt_Eei0Dts_PrkGMQ" name="getMessage" visibility="public">
+            <ownedParameter xmi:id="_eUu9cXt_Eei0Dts_PrkGMQ" name="return" type="_eUGrUHt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eUvkgHt_Eei0Dts_PrkGMQ" name="setMessage" visibility="public">
+            <ownedParameter xmi:id="_eUvkgXt_Eei0Dts_PrkGMQ" name="message" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eUwLkHt_Eei0Dts_PrkGMQ" name="getParameters" visibility="public">
+            <ownedParameter xmi:id="_eUwLkXt_Eei0Dts_PrkGMQ" name="return" type="_eUBy0Xt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eUwyoHt_Eei0Dts_PrkGMQ" name="setParameters" visibility="public">
+            <ownedParameter xmi:id="_eUwyoXt_Eei0Dts_PrkGMQ" name="parameters" type="_eUBy0Xt_Eei0Dts_PrkGMQ">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eUwyont_Eei0Dts_PrkGMQ" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eUwyo3t_Eei0Dts_PrkGMQ"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eUxZsHt_Eei0Dts_PrkGMQ" name="getThreadID" visibility="public">
+            <ownedParameter xmi:id="_eUxZsXt_Eei0Dts_PrkGMQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eUyAwHt_Eei0Dts_PrkGMQ" name="setThreadID" visibility="public">
+            <ownedParameter xmi:id="_eUyAwXt_Eei0Dts_PrkGMQ" name="threadID">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eUyAwnt_Eei0Dts_PrkGMQ" name="getMillis" visibility="public">
+            <ownedParameter xmi:id="_eUyAw3t_Eei0Dts_PrkGMQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eUyn0Ht_Eei0Dts_PrkGMQ" name="setMillis" visibility="public">
+            <ownedParameter xmi:id="_eUyn0Xt_Eei0Dts_PrkGMQ" name="millis">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eUzO4Ht_Eei0Dts_PrkGMQ" name="getThrown" visibility="public">
+            <ownedParameter xmi:id="_eUzO4Xt_Eei0Dts_PrkGMQ" name="return" type="_eUj-UHt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eUz18Ht_Eei0Dts_PrkGMQ" name="setThrown" visibility="public">
+            <ownedParameter xmi:id="_eUz18Xt_Eei0Dts_PrkGMQ" name="thrown" type="_eUj-UHt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eU1EEXt_Eei0Dts_PrkGMQ" name="writeObject" visibility="private">
+            <ownedParameter xmi:id="_eU1EEnt_Eei0Dts_PrkGMQ" name="out" type="_eU1EEHt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eU2SMHt_Eei0Dts_PrkGMQ" name="readObject" visibility="private">
+            <ownedParameter xmi:id="_eU2SMXt_Eei0Dts_PrkGMQ" name="in" type="_eU1rIHt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eU2SMnt_Eei0Dts_PrkGMQ" name="inferCaller" visibility="private"/>
+          <ownedOperation xmi:id="_eU25QHt_Eei0Dts_PrkGMQ" name="isLoggerImplFrame" visibility="private">
+            <ownedParameter xmi:id="_eU25QXt_Eei0Dts_PrkGMQ" name="cname" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eU25Qnt_Eei0Dts_PrkGMQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eU4HYHt_Eei0Dts_PrkGMQ" name="&lt;clinit>" visibility="package" isStatic="true"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_eQcTUHt_Eei0Dts_PrkGMQ" name="Logging" visibility="package" clientDependency="_eVB4YHt_Eei0Dts_PrkGMQ">
+          <generalization xmi:id="_eVDGgHt_Eei0Dts_PrkGMQ" general="_eUBy0Xt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eVDtkHt_Eei0Dts_PrkGMQ" name="logManager" visibility="private" isStatic="true" type="_eQeIgHt_Eei0Dts_PrkGMQ" association="_eaUoEnt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eVEUoHt_Eei0Dts_PrkGMQ" name="EMPTY_STRING" visibility="private" isStatic="true" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+          <interfaceRealization xmi:id="_eVB4YHt_Eei0Dts_PrkGMQ" name="LoggingMXBean" supplier="_eQcTUXt_Eei0Dts_PrkGMQ" client="_eQcTUHt_Eei0Dts_PrkGMQ" contract="_eQcTUXt_Eei0Dts_PrkGMQ"/>
+          <ownedOperation xmi:id="_eVGw4Xt_Eei0Dts_PrkGMQ" name="getLoggerNames" visibility="public">
+            <ownedParameter xmi:id="_eVGw4nt_Eei0Dts_PrkGMQ" name="return" type="_eVGw4Ht_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eVHX8Ht_Eei0Dts_PrkGMQ" name="getLoggerLevel" visibility="public">
+            <ownedParameter xmi:id="_eVHX8Xt_Eei0Dts_PrkGMQ" name="loggerName" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eVHX8nt_Eei0Dts_PrkGMQ" name="return" type="_eUGrUHt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eVImEHt_Eei0Dts_PrkGMQ" name="setLoggerLevel" visibility="public">
+            <ownedParameter xmi:id="_eVImEXt_Eei0Dts_PrkGMQ" name="loggerName" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eVImEnt_Eei0Dts_PrkGMQ" name="levelName" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eVJNIHt_Eei0Dts_PrkGMQ" name="getParentLoggerName" visibility="public">
+            <ownedParameter xmi:id="_eVJNIXt_Eei0Dts_PrkGMQ" name="loggerName" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eVJNInt_Eei0Dts_PrkGMQ" name="return" type="_eUGrUHt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eVKbQHt_Eei0Dts_PrkGMQ" name="&lt;clinit>" visibility="package" isStatic="true"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_eQcTUXt_Eei0Dts_PrkGMQ" name="LoggingMXBean" isAbstract="true">
+          <ownedOperation xmi:id="_eVNekHt_Eei0Dts_PrkGMQ" name="getLoggerNames" visibility="public" isAbstract="true">
+            <ownedParameter xmi:id="_eVNekXt_Eei0Dts_PrkGMQ" name="return" type="_eVGw4Ht_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eVOFoHt_Eei0Dts_PrkGMQ" name="getLoggerLevel" visibility="public" isAbstract="true">
+            <ownedParameter xmi:id="_eVOFoXt_Eei0Dts_PrkGMQ" name="loggerName" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eVOFont_Eei0Dts_PrkGMQ" name="return" type="_eUGrUHt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eVOssHt_Eei0Dts_PrkGMQ" name="setLoggerLevel" visibility="public" isAbstract="true">
+            <ownedParameter xmi:id="_eVOssXt_Eei0Dts_PrkGMQ" name="loggerName" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eVOssnt_Eei0Dts_PrkGMQ" name="levelName" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eVP60Ht_Eei0Dts_PrkGMQ" name="getParentLoggerName" visibility="public" isAbstract="true">
+            <ownedParameter xmi:id="_eVP60Xt_Eei0Dts_PrkGMQ" name="loggerName" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eVP60nt_Eei0Dts_PrkGMQ" name="return" type="_eUGrUHt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_eQc6YHt_Eei0Dts_PrkGMQ" name="MemoryHandler">
+          <generalization xmi:id="_eVP603t_Eei0Dts_PrkGMQ" general="_eQgkwHt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eVQh4Ht_Eei0Dts_PrkGMQ" name="DEFAULT_SIZE" visibility="private" isStatic="true" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_eVQh4Xt_Eei0Dts_PrkGMQ" name="pushLevel" visibility="private" type="_eQhL0nt_Eei0Dts_PrkGMQ" association="_eaUoFHt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eVQh4nt_Eei0Dts_PrkGMQ" name="size" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_eVRI8Ht_Eei0Dts_PrkGMQ" name="target" visibility="private" type="_eQgkwHt_Eei0Dts_PrkGMQ" association="_eaUoFnt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eVRI8Xt_Eei0Dts_PrkGMQ" name="buffer" visibility="private" type="_eQbsQXt_Eei0Dts_PrkGMQ" association="_eaUoGHt_Eei0Dts_PrkGMQ">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eVRI8nt_Eei0Dts_PrkGMQ" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eVRI83t_Eei0Dts_PrkGMQ"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_eVRwAHt_Eei0Dts_PrkGMQ" name="start" visibility="package">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_eVRwAXt_Eei0Dts_PrkGMQ" name="count" visibility="package">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedOperation xmi:id="_eVUMQHt_Eei0Dts_PrkGMQ" name="configure" visibility="private"/>
+          <ownedOperation xmi:id="_eVUMQXt_Eei0Dts_PrkGMQ" name="init" visibility="private"/>
+          <ownedOperation xmi:id="_eVUzUHt_Eei0Dts_PrkGMQ" name="publish" visibility="public">
+            <ownedParameter xmi:id="_eVUzUXt_Eei0Dts_PrkGMQ" name="record" type="_eQbsQXt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eVVaYHt_Eei0Dts_PrkGMQ" name="push" visibility="public"/>
+          <ownedOperation xmi:id="_eVVaYXt_Eei0Dts_PrkGMQ" name="flush" visibility="public"/>
+          <ownedOperation xmi:id="_eVVaYnt_Eei0Dts_PrkGMQ" name="close" visibility="public"/>
+          <ownedOperation xmi:id="_eVWBcHt_Eei0Dts_PrkGMQ" name="setPushLevel" visibility="public">
+            <ownedParameter xmi:id="_eVWBcXt_Eei0Dts_PrkGMQ" name="newLevel" type="_eQhL0nt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eVWogHt_Eei0Dts_PrkGMQ" name="getPushLevel" visibility="public">
+            <ownedParameter xmi:id="_eVWogXt_Eei0Dts_PrkGMQ" name="return" type="_eQhL0nt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eVXPkHt_Eei0Dts_PrkGMQ" name="isLoggable" visibility="public">
+            <ownedParameter xmi:id="_eVXPkXt_Eei0Dts_PrkGMQ" name="record" type="_eQbsQXt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eVXPknt_Eei0Dts_PrkGMQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_eQc6YXt_Eei0Dts_PrkGMQ" name="SimpleFormatter">
+          <generalization xmi:id="_eVXPk3t_Eei0Dts_PrkGMQ" general="_eQbsQHt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eVX2oHt_Eei0Dts_PrkGMQ" name="format" visibility="private" isStatic="true" type="_eUGrUHt_Eei0Dts_PrkGMQ" isReadOnly="true"/>
+          <ownedAttribute xmi:id="_eVX2ont_Eei0Dts_PrkGMQ" name="dat" visibility="private" type="_eVX2oXt_Eei0Dts_PrkGMQ" isReadOnly="true"/>
+          <ownedOperation xmi:id="_eVaS4Ht_Eei0Dts_PrkGMQ" name="format" visibility="public">
+            <ownedParameter xmi:id="_eVaS4Xt_Eei0Dts_PrkGMQ" name="record" type="_eQbsQXt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eVaS4nt_Eei0Dts_PrkGMQ" name="return" type="_eUGrUHt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eVbhAHt_Eei0Dts_PrkGMQ" name="&lt;clinit>" visibility="package" isStatic="true"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_eQc6Ynt_Eei0Dts_PrkGMQ" name="SocketHandler">
+          <generalization xmi:id="_eVcIEHt_Eei0Dts_PrkGMQ" general="_eQc6Y3t_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eVcvInt_Eei0Dts_PrkGMQ" name="sock" visibility="private" type="_eVcvIXt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eVcvI3t_Eei0Dts_PrkGMQ" name="host" visibility="private" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eVdWMHt_Eei0Dts_PrkGMQ" name="port" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedOperation xmi:id="_eVfLYHt_Eei0Dts_PrkGMQ" name="configure" visibility="private"/>
+          <ownedOperation xmi:id="_eVfycHt_Eei0Dts_PrkGMQ" name="connect" visibility="private"/>
+          <ownedOperation xmi:id="_eVfycXt_Eei0Dts_PrkGMQ" name="close" visibility="public"/>
+          <ownedOperation xmi:id="_eVgZgHt_Eei0Dts_PrkGMQ" name="publish" visibility="public">
+            <ownedParameter xmi:id="_eVgZgXt_Eei0Dts_PrkGMQ" name="record" type="_eQbsQXt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_eQc6Y3t_Eei0Dts_PrkGMQ" name="StreamHandler">
+          <generalization xmi:id="_eVhAkHt_Eei0Dts_PrkGMQ" general="_eQgkwHt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eVhAknt_Eei0Dts_PrkGMQ" name="output" visibility="private" type="_eVhAkXt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eVhAk3t_Eei0Dts_PrkGMQ" name="doneHeader" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_eVhnoXt_Eei0Dts_PrkGMQ" name="writer" visibility="private" type="_eVhnoHt_Eei0Dts_PrkGMQ"/>
+          <ownedOperation xmi:id="_eVkD4Ht_Eei0Dts_PrkGMQ" name="configure" visibility="private"/>
+          <ownedOperation xmi:id="_eVkq8Ht_Eei0Dts_PrkGMQ" name="setOutputStream" visibility="protected">
+            <ownedParameter xmi:id="_eVkq8Xt_Eei0Dts_PrkGMQ" name="out" type="_eVhAkXt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eVlSAHt_Eei0Dts_PrkGMQ" name="setEncoding" visibility="public">
+            <ownedParameter xmi:id="_eVlSAXt_Eei0Dts_PrkGMQ" name="encoding" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eVl5EHt_Eei0Dts_PrkGMQ" name="publish" visibility="public">
+            <ownedParameter xmi:id="_eVl5EXt_Eei0Dts_PrkGMQ" name="record" type="_eQbsQXt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eVmgIHt_Eei0Dts_PrkGMQ" name="isLoggable" visibility="public">
+            <ownedParameter xmi:id="_eVmgIXt_Eei0Dts_PrkGMQ" name="record" type="_eQbsQXt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eVmgInt_Eei0Dts_PrkGMQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eVmgI3t_Eei0Dts_PrkGMQ" name="flush" visibility="public"/>
+          <ownedOperation xmi:id="_eVnHMHt_Eei0Dts_PrkGMQ" name="flushAndClose" visibility="private"/>
+          <ownedOperation xmi:id="_eVnHMXt_Eei0Dts_PrkGMQ" name="close" visibility="public"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_eQdhcHt_Eei0Dts_PrkGMQ" name="XMLFormatter">
+          <generalization xmi:id="_eVnuQHt_Eei0Dts_PrkGMQ" general="_eQbsQHt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eVnuQXt_Eei0Dts_PrkGMQ" name="manager" visibility="private" type="_eQeIgHt_Eei0Dts_PrkGMQ" association="_eaUoGnt_Eei0Dts_PrkGMQ"/>
+          <ownedOperation xmi:id="_eVqxkHt_Eei0Dts_PrkGMQ" name="a2" visibility="private">
+            <ownedParameter xmi:id="_eVqxkXt_Eei0Dts_PrkGMQ" name="sb" type="_eVqKgHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eVqxknt_Eei0Dts_PrkGMQ" name="x">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eVrYoHt_Eei0Dts_PrkGMQ" name="appendISO8601" visibility="private">
+            <ownedParameter xmi:id="_eVrYoXt_Eei0Dts_PrkGMQ" name="sb" type="_eVqKgHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eVrYont_Eei0Dts_PrkGMQ" name="millis">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eVr_sHt_Eei0Dts_PrkGMQ" name="escape" visibility="private">
+            <ownedParameter xmi:id="_eVr_sXt_Eei0Dts_PrkGMQ" name="sb" type="_eVqKgHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eVr_snt_Eei0Dts_PrkGMQ" name="text" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eVsmwHt_Eei0Dts_PrkGMQ" name="format" visibility="public">
+            <ownedParameter xmi:id="_eVsmwXt_Eei0Dts_PrkGMQ" name="record" type="_eQbsQXt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eVsmwnt_Eei0Dts_PrkGMQ" name="return" type="_eUGrUHt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eVtN0Ht_Eei0Dts_PrkGMQ" name="getHead" visibility="public">
+            <ownedParameter xmi:id="_eVtN0Xt_Eei0Dts_PrkGMQ" name="h" type="_eQgkwHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eVtN0nt_Eei0Dts_PrkGMQ" name="return" type="_eUGrUHt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eVt04Ht_Eei0Dts_PrkGMQ" name="getTail" visibility="public">
+            <ownedParameter xmi:id="_eVt04Xt_Eei0Dts_PrkGMQ" name="h" type="_eQgkwHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eVt04nt_Eei0Dts_PrkGMQ" name="return" type="_eUGrUHt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_eQdhcXt_Eei0Dts_PrkGMQ" name="LoggingPermission">
+          <generalization xmi:id="_eVub8Ht_Eei0Dts_PrkGMQ" general="_eVt05Ht_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eVub8Xt_Eei0Dts_PrkGMQ" name="serialVersionUID" visibility="private" isStatic="true" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_eQeIgHt_Eei0Dts_PrkGMQ" name="LogManager">
+          <generalization xmi:id="_eVub8nt_Eei0Dts_PrkGMQ" general="_eUBy0Xt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eVvDAHt_Eei0Dts_PrkGMQ" name="manager" visibility="private" isStatic="true" type="_eQeIgHt_Eei0Dts_PrkGMQ" isReadOnly="true" association="_eaUoHHt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eVvDAnt_Eei0Dts_PrkGMQ" name="props" visibility="private" type="_eVvDAXt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eVvDA3t_Eei0Dts_PrkGMQ" name="defaultLevel" visibility="private" isStatic="true" type="_eQhL0nt_Eei0Dts_PrkGMQ" isReadOnly="true" association="_eaVPIHt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eVvqFXt_Eei0Dts_PrkGMQ" name="listenerMap" visibility="private" type="_eVvqFHt_Eei0Dts_PrkGMQ" isReadOnly="true"/>
+          <ownedAttribute xmi:id="_eVwRInt_Eei0Dts_PrkGMQ" name="systemContext" visibility="private" type="_eVwRIXt_Eei0Dts_PrkGMQ" isReadOnly="true"/>
+          <ownedAttribute xmi:id="_eVwRI3t_Eei0Dts_PrkGMQ" name="userContext" visibility="private" type="_eVwRIXt_Eei0Dts_PrkGMQ" isReadOnly="true"/>
+          <ownedAttribute xmi:id="_eVwRJHt_Eei0Dts_PrkGMQ" name="rootLogger" visibility="private" type="_eQgkwXt_Eei0Dts_PrkGMQ" association="_eaVPInt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eVw4MHt_Eei0Dts_PrkGMQ" name="readPrimordialConfiguration" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_eVw4MXt_Eei0Dts_PrkGMQ" name="initializedGlobalHandlers" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_eVw4Mnt_Eei0Dts_PrkGMQ" name="deathImminent" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_eVw4M3t_Eei0Dts_PrkGMQ" name="initializedCalled" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_eVw4NHt_Eei0Dts_PrkGMQ" name="initializationDone" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_eVxfR3t_Eei0Dts_PrkGMQ" name="contextsMap" visibility="private" type="_eVxfRnt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eVyGVXt_Eei0Dts_PrkGMQ" name="loggerRefQueue" visibility="private" type="_eVyGVHt_Eei0Dts_PrkGMQ" isReadOnly="true"/>
+          <ownedAttribute xmi:id="_eVyGVnt_Eei0Dts_PrkGMQ" name="MAX_ITERATIONS" visibility="private" isStatic="true" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_eVytYXt_Eei0Dts_PrkGMQ" name="controlPermission" visibility="private" type="_eVytYHt_Eei0Dts_PrkGMQ" isReadOnly="true"/>
+          <ownedAttribute xmi:id="_eVytYnt_Eei0Dts_PrkGMQ" name="loggingMXBean" visibility="private" isStatic="true" type="_eQcTUXt_Eei0Dts_PrkGMQ" association="_eaVPI3t_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eVytY3t_Eei0Dts_PrkGMQ" name="LOGGING_MXBEAN_NAME" visibility="public" isStatic="true" type="_eUGrUHt_Eei0Dts_PrkGMQ" isReadOnly="true"/>
+          <ownedAttribute xmi:id="_eVzUcHt_Eei0Dts_PrkGMQ" name="$assertionsDisabled" visibility="package" isStatic="true" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedAttribute>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_eQeIgXt_Eei0Dts_PrkGMQ" name="Beans" visibility="private"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_eQevkHt_Eei0Dts_PrkGMQ" name="Cleaner" visibility="private"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_eQevkXt_Eei0Dts_PrkGMQ" name="LogNode" visibility="private"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_eQfWoHt_Eei0Dts_PrkGMQ" name="LoggerContext" visibility="package"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_eQfWoXt_Eei0Dts_PrkGMQ" name="LoggerWeakRef" visibility="package"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_eQf9sHt_Eei0Dts_PrkGMQ" name="RootLogger" visibility="private"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_eQf9sXt_Eei0Dts_PrkGMQ" name="SystemLoggerContext" visibility="package"/>
+          <ownedOperation xmi:id="_eV40AHt_Eei0Dts_PrkGMQ" name="checkSubclassPermissions" visibility="private" isStatic="true">
+            <ownedParameter xmi:id="_eV40AXt_Eei0Dts_PrkGMQ" name="return" type="_eV4M8Ht_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eV40Ant_Eei0Dts_PrkGMQ" name="ensureLogManagerInitialized" visibility="package"/>
+          <ownedOperation xmi:id="_eV5bEHt_Eei0Dts_PrkGMQ" name="getLogManager" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_eV5bEXt_Eei0Dts_PrkGMQ" name="return" type="_eQeIgHt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eV5bEnt_Eei0Dts_PrkGMQ" name="readPrimordialConfiguration" visibility="private"/>
+          <ownedOperation xmi:id="_eV6CIHt_Eei0Dts_PrkGMQ" name="addPropertyChangeListener" visibility="public">
+            <ownedParameter xmi:id="_eV6CIXt_Eei0Dts_PrkGMQ" name="l" type="_eV5bFHt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eV6pMHt_Eei0Dts_PrkGMQ" name="removePropertyChangeListener" visibility="public">
+            <ownedParameter xmi:id="_eV6pMXt_Eei0Dts_PrkGMQ" name="l" type="_eV5bFHt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eV6pMnt_Eei0Dts_PrkGMQ" name="getUserContext" visibility="private">
+            <ownedParameter xmi:id="_eV7QQHt_Eei0Dts_PrkGMQ" name="return" type="_eVwRIXt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eV7QQXt_Eei0Dts_PrkGMQ" name="getSystemContext" visibility="package">
+            <ownedParameter xmi:id="_eV7QQnt_Eei0Dts_PrkGMQ" name="return" type="_eVwRIXt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eV7QQ3t_Eei0Dts_PrkGMQ" name="contexts" visibility="private">
+            <ownedParameter xmi:id="_eV7QRHt_Eei0Dts_PrkGMQ" name="return" type="_eVGw4Ht_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eV8eYXt_Eei0Dts_PrkGMQ" name="demandLogger" visibility="package">
+            <ownedParameter xmi:id="_eV8eYnt_Eei0Dts_PrkGMQ" name="name" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eV8eY3t_Eei0Dts_PrkGMQ" name="resourceBundleName" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eV8eZHt_Eei0Dts_PrkGMQ" name="caller" type="_eV8eYHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eV8eZXt_Eei0Dts_PrkGMQ" name="return" type="_eQgkwXt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eV9sgHt_Eei0Dts_PrkGMQ" name="demandSystemLogger" visibility="package">
+            <ownedParameter xmi:id="_eV9sgXt_Eei0Dts_PrkGMQ" name="name" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eV9sgnt_Eei0Dts_PrkGMQ" name="resourceBundleName" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eV9sg3t_Eei0Dts_PrkGMQ" name="return" type="_eQgkwXt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eV-TkHt_Eei0Dts_PrkGMQ" name="loadLoggerHandlers" visibility="private">
+            <ownedParameter xmi:id="_eV-TkXt_Eei0Dts_PrkGMQ" name="logger" type="_eQgkwXt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eV-Tknt_Eei0Dts_PrkGMQ" name="name" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eV-Tk3t_Eei0Dts_PrkGMQ" name="handlersPropertyName" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eV-TlHt_Eei0Dts_PrkGMQ" name="drainLoggerRefQueueBounded" visibility="package"/>
+          <ownedOperation xmi:id="_eV-6oHt_Eei0Dts_PrkGMQ" name="addLogger" visibility="public">
+            <ownedParameter xmi:id="_eV-6oXt_Eei0Dts_PrkGMQ" name="logger" type="_eQgkwXt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eV-6ont_Eei0Dts_PrkGMQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eWAIwHt_Eei0Dts_PrkGMQ" name="doSetLevel" visibility="private" isStatic="true">
+            <ownedParameter xmi:id="_eWAIwXt_Eei0Dts_PrkGMQ" name="logger" type="_eQgkwXt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eWAIwnt_Eei0Dts_PrkGMQ" name="level" type="_eQhL0nt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eWAv0Ht_Eei0Dts_PrkGMQ" name="doSetParent" visibility="private" isStatic="true">
+            <ownedParameter xmi:id="_eWAv0Xt_Eei0Dts_PrkGMQ" name="logger" type="_eQgkwXt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eWAv0nt_Eei0Dts_PrkGMQ" name="parent" type="_eQgkwXt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eWBW4Ht_Eei0Dts_PrkGMQ" name="getLogger" visibility="public">
+            <ownedParameter xmi:id="_eWBW4Xt_Eei0Dts_PrkGMQ" name="name" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eWBW4nt_Eei0Dts_PrkGMQ" name="return" type="_eQgkwXt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eWBW5Ht_Eei0Dts_PrkGMQ" name="getLoggerNames" visibility="public">
+            <ownedParameter xmi:id="_eWBW5Xt_Eei0Dts_PrkGMQ" name="return" type="_eWBW43t_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eWB98Ht_Eei0Dts_PrkGMQ" name="readConfiguration" visibility="public"/>
+          <ownedOperation xmi:id="_eWClAHt_Eei0Dts_PrkGMQ" name="reset" visibility="public"/>
+          <ownedOperation xmi:id="_eWDMEHt_Eei0Dts_PrkGMQ" name="resetLogger" visibility="private">
+            <ownedParameter xmi:id="_eWDMEXt_Eei0Dts_PrkGMQ" name="logger" type="_eQgkwXt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eWDzIHt_Eei0Dts_PrkGMQ" name="parseClassNames" visibility="private">
+            <ownedParameter xmi:id="_eWDzIXt_Eei0Dts_PrkGMQ" name="propertyName" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eWDzInt_Eei0Dts_PrkGMQ" name="return" type="_eUGrUHt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eWDzJHt_Eei0Dts_PrkGMQ" name="readConfiguration" visibility="public">
+            <ownedParameter xmi:id="_eWDzJXt_Eei0Dts_PrkGMQ" name="ins" type="_eWDzI3t_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eWFBQHt_Eei0Dts_PrkGMQ" name="getProperty" visibility="public">
+            <ownedParameter xmi:id="_eWFBQXt_Eei0Dts_PrkGMQ" name="name" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eWFBQnt_Eei0Dts_PrkGMQ" name="return" type="_eUGrUHt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eWFoUHt_Eei0Dts_PrkGMQ" name="getStringProperty" visibility="package">
+            <ownedParameter xmi:id="_eWFoUXt_Eei0Dts_PrkGMQ" name="name" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eWFoUnt_Eei0Dts_PrkGMQ" name="defaultValue" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eWFoU3t_Eei0Dts_PrkGMQ" name="return" type="_eUGrUHt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eWGPYHt_Eei0Dts_PrkGMQ" name="getIntProperty" visibility="package">
+            <ownedParameter xmi:id="_eWGPYXt_Eei0Dts_PrkGMQ" name="name" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eWGPYnt_Eei0Dts_PrkGMQ" name="defaultValue">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_eWGPY3t_Eei0Dts_PrkGMQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eWG2cHt_Eei0Dts_PrkGMQ" name="getBooleanProperty" visibility="package">
+            <ownedParameter xmi:id="_eWG2cXt_Eei0Dts_PrkGMQ" name="name" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eWG2cnt_Eei0Dts_PrkGMQ" name="defaultValue">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_eWG2c3t_Eei0Dts_PrkGMQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eWIEkHt_Eei0Dts_PrkGMQ" name="getLevelProperty" visibility="package">
+            <ownedParameter xmi:id="_eWIEkXt_Eei0Dts_PrkGMQ" name="name" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eWIEknt_Eei0Dts_PrkGMQ" name="defaultValue" type="_eQhL0nt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eWIEk3t_Eei0Dts_PrkGMQ" name="return" type="_eQhL0nt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eWIroHt_Eei0Dts_PrkGMQ" name="getFilterProperty" visibility="package">
+            <ownedParameter xmi:id="_eWIroXt_Eei0Dts_PrkGMQ" name="name" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eWIront_Eei0Dts_PrkGMQ" name="defaultValue" type="_eQbFMHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eWIro3t_Eei0Dts_PrkGMQ" name="return" type="_eQbFMHt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eWJ5wHt_Eei0Dts_PrkGMQ" name="getFormatterProperty" visibility="package">
+            <ownedParameter xmi:id="_eWJ5wXt_Eei0Dts_PrkGMQ" name="name" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eWJ5wnt_Eei0Dts_PrkGMQ" name="defaultValue" type="_eQbsQHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eWJ5w3t_Eei0Dts_PrkGMQ" name="return" type="_eQbsQHt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eWJ5xHt_Eei0Dts_PrkGMQ" name="initializeGlobalHandlers" visibility="private"/>
+          <ownedOperation xmi:id="_eWKg0Ht_Eei0Dts_PrkGMQ" name="checkPermission" visibility="package"/>
+          <ownedOperation xmi:id="_eWKg0Xt_Eei0Dts_PrkGMQ" name="checkAccess" visibility="public"/>
+          <ownedOperation xmi:id="_eWLH4Ht_Eei0Dts_PrkGMQ" name="setLevelsOnExistingLoggers" visibility="private"/>
+          <ownedOperation xmi:id="_eWLH4Xt_Eei0Dts_PrkGMQ" name="getLoggingMXBean" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_eWLH4nt_Eei0Dts_PrkGMQ" name="return" type="_eQcTUXt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eWM9EHt_Eei0Dts_PrkGMQ" name="access$100" visibility="package" isStatic="true">
+            <ownedParameter xmi:id="_eWM9EXt_Eei0Dts_PrkGMQ" name="return" type="_eQeIgHt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eWPZUHt_Eei0Dts_PrkGMQ" name="access$202" visibility="package" isStatic="true">
+            <ownedParameter xmi:id="_eWPZUXt_Eei0Dts_PrkGMQ" name="arg0" type="_eQeIgHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eWPZUnt_Eei0Dts_PrkGMQ" name="arg1">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_eWPZU3t_Eei0Dts_PrkGMQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eWROgHt_Eei0Dts_PrkGMQ" name="access$302" visibility="package" isStatic="true">
+            <ownedParameter xmi:id="_eWROgXt_Eei0Dts_PrkGMQ" name="arg0" type="_eQeIgHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eWROgnt_Eei0Dts_PrkGMQ" name="arg1">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_eWROg3t_Eei0Dts_PrkGMQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eWTqwHt_Eei0Dts_PrkGMQ" name="access$500" visibility="package" isStatic="true">
+            <ownedParameter xmi:id="_eWTqwXt_Eei0Dts_PrkGMQ" name="arg0" type="_eQeIgHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eWTqwnt_Eei0Dts_PrkGMQ" name="return" type="_eQgkwXt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eWVf8Ht_Eei0Dts_PrkGMQ" name="access$600" visibility="package" isStatic="true">
+            <ownedParameter xmi:id="_eWVf8Xt_Eei0Dts_PrkGMQ" name="arg0" type="_eQeIgHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eWVf8nt_Eei0Dts_PrkGMQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eWXVIHt_Eei0Dts_PrkGMQ" name="access$700" visibility="package" isStatic="true">
+            <ownedParameter xmi:id="_eWXVIXt_Eei0Dts_PrkGMQ" name="arg0" type="_eQeIgHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eWXVInt_Eei0Dts_PrkGMQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eWZKUHt_Eei0Dts_PrkGMQ" name="access$800" visibility="package" isStatic="true">
+            <ownedParameter xmi:id="_eWZKUXt_Eei0Dts_PrkGMQ" name="arg0" type="_eQeIgHt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eWbmkHt_Eei0Dts_PrkGMQ" name="access$502" visibility="package" isStatic="true">
+            <ownedParameter xmi:id="_eWbmkXt_Eei0Dts_PrkGMQ" name="arg0" type="_eQeIgHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eWbmknt_Eei0Dts_PrkGMQ" name="arg1" type="_eQgkwXt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eWbmk3t_Eei0Dts_PrkGMQ" name="return" type="_eQgkwXt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eWdbwHt_Eei0Dts_PrkGMQ" name="access$1000" visibility="package" isStatic="true">
+            <ownedParameter xmi:id="_eWdbwXt_Eei0Dts_PrkGMQ" name="return" type="_eQhL0nt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eWf4AHt_Eei0Dts_PrkGMQ" name="access$1100" visibility="package" isStatic="true">
+            <ownedParameter xmi:id="_eWf4AXt_Eei0Dts_PrkGMQ" name="arg0" type="_eQgkwXt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eWf4Ant_Eei0Dts_PrkGMQ" name="arg1" type="_eQhL0nt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eWhtMHt_Eei0Dts_PrkGMQ" name="access$1200" visibility="package" isStatic="true">
+            <ownedParameter xmi:id="_eWhtMXt_Eei0Dts_PrkGMQ" name="arg0" type="_eQgkwXt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eWhtMnt_Eei0Dts_PrkGMQ" name="arg1" type="_eQgkwXt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eWkJcHt_Eei0Dts_PrkGMQ" name="access$1300" visibility="package" isStatic="true">
+            <ownedParameter xmi:id="_eWkJcXt_Eei0Dts_PrkGMQ" name="arg0" type="_eQeIgHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eWkJcnt_Eei0Dts_PrkGMQ" name="arg1" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eWkJc3t_Eei0Dts_PrkGMQ" name="return" type="_eUGrUHt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eWmlsXt_Eei0Dts_PrkGMQ" name="access$1400" visibility="package" isStatic="true">
+            <ownedParameter xmi:id="_eWmlsnt_Eei0Dts_PrkGMQ" name="arg0" type="_eQeIgHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eWmls3t_Eei0Dts_PrkGMQ" name="return" type="_eWmlsHt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eWpB8Ht_Eei0Dts_PrkGMQ" name="access$1500" visibility="package" isStatic="true">
+            <ownedParameter xmi:id="_eWpB8Xt_Eei0Dts_PrkGMQ" name="arg0" type="_eQeIgHt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eWqQEHt_Eei0Dts_PrkGMQ" name="&lt;clinit>" visibility="package" isStatic="true"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_eQgkwHt_Eei0Dts_PrkGMQ" name="Handler" isAbstract="true">
+          <generalization xmi:id="_eWq3IHt_Eei0Dts_PrkGMQ" general="_eUBy0Xt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eWq3IXt_Eei0Dts_PrkGMQ" name="offValue" visibility="private" isStatic="true" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_eWq3Int_Eei0Dts_PrkGMQ" name="manager" visibility="private" type="_eQeIgHt_Eei0Dts_PrkGMQ" isReadOnly="true" association="_eaVPJXt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eWreMHt_Eei0Dts_PrkGMQ" name="filter" visibility="private" type="_eQbFMHt_Eei0Dts_PrkGMQ" association="_eaVPJ3t_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eWreMXt_Eei0Dts_PrkGMQ" name="formatter" visibility="private" type="_eQbsQHt_Eei0Dts_PrkGMQ" association="_eaVPKXt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eWreMnt_Eei0Dts_PrkGMQ" name="logLevel" visibility="private" type="_eQhL0nt_Eei0Dts_PrkGMQ" association="_eaVPK3t_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eWreM3t_Eei0Dts_PrkGMQ" name="errorManager" visibility="private" type="_eQXa0Ht_Eei0Dts_PrkGMQ" association="_eaVPLXt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eWsFQHt_Eei0Dts_PrkGMQ" name="encoding" visibility="private" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eWsFQXt_Eei0Dts_PrkGMQ" name="sealed" visibility="package">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedAttribute>
+          <ownedOperation xmi:id="_eWt6cHt_Eei0Dts_PrkGMQ" name="publish" visibility="public" isAbstract="true">
+            <ownedParameter xmi:id="_eWt6cXt_Eei0Dts_PrkGMQ" name="record" type="_eQbsQXt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eWt6cnt_Eei0Dts_PrkGMQ" name="flush" visibility="public" isAbstract="true"/>
+          <ownedOperation xmi:id="_eWuhgHt_Eei0Dts_PrkGMQ" name="close" visibility="public" isAbstract="true"/>
+          <ownedOperation xmi:id="_eWuhgXt_Eei0Dts_PrkGMQ" name="setFormatter" visibility="public">
+            <ownedParameter xmi:id="_eWuhgnt_Eei0Dts_PrkGMQ" name="newFormatter" type="_eQbsQHt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eWvIkHt_Eei0Dts_PrkGMQ" name="getFormatter" visibility="public">
+            <ownedParameter xmi:id="_eWvIkXt_Eei0Dts_PrkGMQ" name="return" type="_eQbsQHt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eWvIknt_Eei0Dts_PrkGMQ" name="setEncoding" visibility="public">
+            <ownedParameter xmi:id="_eWvIk3t_Eei0Dts_PrkGMQ" name="encoding" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eWvIlHt_Eei0Dts_PrkGMQ" name="getEncoding" visibility="public">
+            <ownedParameter xmi:id="_eWvIlXt_Eei0Dts_PrkGMQ" name="return" type="_eUGrUHt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eWvvoHt_Eei0Dts_PrkGMQ" name="setFilter" visibility="public">
+            <ownedParameter xmi:id="_eWvvoXt_Eei0Dts_PrkGMQ" name="newFilter" type="_eQbFMHt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eWvvont_Eei0Dts_PrkGMQ" name="getFilter" visibility="public">
+            <ownedParameter xmi:id="_eWvvo3t_Eei0Dts_PrkGMQ" name="return" type="_eQbFMHt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eWwWsHt_Eei0Dts_PrkGMQ" name="setErrorManager" visibility="public">
+            <ownedParameter xmi:id="_eWwWsXt_Eei0Dts_PrkGMQ" name="em" type="_eQXa0Ht_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eWw9wHt_Eei0Dts_PrkGMQ" name="getErrorManager" visibility="public">
+            <ownedParameter xmi:id="_eWw9wXt_Eei0Dts_PrkGMQ" name="return" type="_eQXa0Ht_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eWxk0Ht_Eei0Dts_PrkGMQ" name="reportError" visibility="protected">
+            <ownedParameter xmi:id="_eWxk0Xt_Eei0Dts_PrkGMQ" name="msg" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eWxk0nt_Eei0Dts_PrkGMQ" name="ex" type="_eUGrUXt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eWxk03t_Eei0Dts_PrkGMQ" name="code">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eWxk1Ht_Eei0Dts_PrkGMQ" name="setLevel" visibility="public">
+            <ownedParameter xmi:id="_eWxk1Xt_Eei0Dts_PrkGMQ" name="newLevel" type="_eQhL0nt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eWyL4Ht_Eei0Dts_PrkGMQ" name="getLevel" visibility="public">
+            <ownedParameter xmi:id="_eWyL4Xt_Eei0Dts_PrkGMQ" name="return" type="_eQhL0nt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eWyL4nt_Eei0Dts_PrkGMQ" name="isLoggable" visibility="public">
+            <ownedParameter xmi:id="_eWyL43t_Eei0Dts_PrkGMQ" name="record" type="_eQbsQXt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eWyL5Ht_Eei0Dts_PrkGMQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eWyy8Ht_Eei0Dts_PrkGMQ" name="checkPermission" visibility="package"/>
+          <ownedOperation xmi:id="_eWzaAHt_Eei0Dts_PrkGMQ" name="&lt;clinit>" visibility="package" isStatic="true"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_eQgkwXt_Eei0Dts_PrkGMQ" name="Logger">
+          <generalization xmi:id="_eW0BEHt_Eei0Dts_PrkGMQ" general="_eUBy0Xt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eW0BEXt_Eei0Dts_PrkGMQ" name="emptyHandlers" visibility="private" isStatic="true" type="_eQgkwHt_Eei0Dts_PrkGMQ" isReadOnly="true" association="_eaVPL3t_Eei0Dts_PrkGMQ">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eW0BEnt_Eei0Dts_PrkGMQ" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eW0BE3t_Eei0Dts_PrkGMQ"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_eW0oIHt_Eei0Dts_PrkGMQ" name="offValue" visibility="private" isStatic="true" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_eW0oIXt_Eei0Dts_PrkGMQ" name="SYSTEM_LOGGER_RB_NAME" visibility="package" isStatic="true" type="_eUGrUHt_Eei0Dts_PrkGMQ" isReadOnly="true"/>
+          <ownedAttribute xmi:id="_eW0oJHt_Eei0Dts_PrkGMQ" name="SYSTEM_BUNDLE" visibility="private" isStatic="true" type="_eW0oI3t_Eei0Dts_PrkGMQ" isReadOnly="true"/>
+          <ownedAttribute xmi:id="_eW1PMHt_Eei0Dts_PrkGMQ" name="NO_RESOURCE_BUNDLE" visibility="private" isStatic="true" type="_eW0oI3t_Eei0Dts_PrkGMQ" isReadOnly="true"/>
+          <ownedAttribute xmi:id="_eW1PMXt_Eei0Dts_PrkGMQ" name="manager" visibility="private" type="_eQeIgHt_Eei0Dts_PrkGMQ" association="_eaVPInt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eW1PMnt_Eei0Dts_PrkGMQ" name="name" visibility="private" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eW12RHt_Eei0Dts_PrkGMQ" name="handlers" visibility="private" type="_eW12Q3t_Eei0Dts_PrkGMQ" isReadOnly="true"/>
+          <ownedAttribute xmi:id="_eW2dUHt_Eei0Dts_PrkGMQ" name="loggerBundle" visibility="private" type="_eW0oI3t_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eW2dUXt_Eei0Dts_PrkGMQ" name="useParentHandlers" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_eW2dUnt_Eei0Dts_PrkGMQ" name="filter" visibility="private" type="_eQbFMHt_Eei0Dts_PrkGMQ" association="_eaVPMXt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eW2dU3t_Eei0Dts_PrkGMQ" name="anonymous" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_eW3EYHt_Eei0Dts_PrkGMQ" name="catalog" visibility="private" type="_eUklZXt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eW3EYXt_Eei0Dts_PrkGMQ" name="catalogName" visibility="private" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eW3EY3t_Eei0Dts_PrkGMQ" name="catalogLocale" visibility="private" type="_eW3EYnt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eW3rcHt_Eei0Dts_PrkGMQ" name="treeLock" visibility="private" isStatic="true" type="_eUBy0Xt_Eei0Dts_PrkGMQ" isReadOnly="true"/>
+          <ownedAttribute xmi:id="_eW3rcXt_Eei0Dts_PrkGMQ" name="parent" visibility="private" type="_eQgkwXt_Eei0Dts_PrkGMQ" association="_eaVPM3t_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eW4ShXt_Eei0Dts_PrkGMQ" name="kids" visibility="private" type="_eW4ShHt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eW4Shnt_Eei0Dts_PrkGMQ" name="levelObject" visibility="private" type="_eQhL0nt_Eei0Dts_PrkGMQ" association="_eaVPNHt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eW4Sh3t_Eei0Dts_PrkGMQ" name="levelValue" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_eW45k3t_Eei0Dts_PrkGMQ" name="callersClassLoaderRef" visibility="private" type="_eW45knt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eW45lHt_Eei0Dts_PrkGMQ" name="isSystemLogger" visibility="private" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_eW5goHt_Eei0Dts_PrkGMQ" name="GLOBAL_LOGGER_NAME" visibility="public" isStatic="true" type="_eUGrUHt_Eei0Dts_PrkGMQ" isReadOnly="true"/>
+          <ownedAttribute xmi:id="_eW6HsHt_Eei0Dts_PrkGMQ" name="global" visibility="public" isStatic="true" type="_eQgkwXt_Eei0Dts_PrkGMQ" isReadOnly="true" association="_eaVPM3t_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eW6HsXt_Eei0Dts_PrkGMQ" name="$assertionsDisabled" visibility="package" isStatic="true" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedAttribute>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_eQhL0Ht_Eei0Dts_PrkGMQ" name="LoggerBundle" visibility="private"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_eQhL0Xt_Eei0Dts_PrkGMQ" name="SystemLoggerHelper" visibility="private"/>
+          <ownedOperation xmi:id="_eW-ZIHt_Eei0Dts_PrkGMQ" name="getGlobal" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_eW-ZIXt_Eei0Dts_PrkGMQ" name="return" type="_eQgkwXt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eW_AMHt_Eei0Dts_PrkGMQ" name="setCallersClassLoaderRef" visibility="private">
+            <ownedParameter xmi:id="_eW_AMXt_Eei0Dts_PrkGMQ" name="caller" type="_eV8eYHt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eW_nQHt_Eei0Dts_PrkGMQ" name="getCallersClassLoader" visibility="private">
+            <ownedParameter xmi:id="_eW_nQXt_Eei0Dts_PrkGMQ" name="return" type="_eW_AMnt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eXAOUHt_Eei0Dts_PrkGMQ" name="setLogManager" visibility="package">
+            <ownedParameter xmi:id="_eXAOUXt_Eei0Dts_PrkGMQ" name="manager" type="_eQeIgHt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eXAOUnt_Eei0Dts_PrkGMQ" name="checkPermission" visibility="private"/>
+          <ownedOperation xmi:id="_eXA1YHt_Eei0Dts_PrkGMQ" name="demandLogger" visibility="private" isStatic="true">
+            <ownedParameter xmi:id="_eXA1YXt_Eei0Dts_PrkGMQ" name="name" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eXA1Ynt_Eei0Dts_PrkGMQ" name="resourceBundleName" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eXA1Y3t_Eei0Dts_PrkGMQ" name="caller" type="_eV8eYHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eXA1ZHt_Eei0Dts_PrkGMQ" name="return" type="_eQgkwXt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eXBccHt_Eei0Dts_PrkGMQ" name="getLogger" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_eXBccXt_Eei0Dts_PrkGMQ" name="name" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eXBccnt_Eei0Dts_PrkGMQ" name="return" type="_eQgkwXt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eXCqkHt_Eei0Dts_PrkGMQ" name="getLogger" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_eXCqkXt_Eei0Dts_PrkGMQ" name="name" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eXCqknt_Eei0Dts_PrkGMQ" name="resourceBundleName" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eXCqk3t_Eei0Dts_PrkGMQ" name="return" type="_eQgkwXt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eXD4sHt_Eei0Dts_PrkGMQ" name="getPlatformLogger" visibility="package" isStatic="true">
+            <ownedParameter xmi:id="_eXD4sXt_Eei0Dts_PrkGMQ" name="name" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eXD4snt_Eei0Dts_PrkGMQ" name="return" type="_eQgkwXt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eXD4s3t_Eei0Dts_PrkGMQ" name="getAnonymousLogger" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_eXD4tHt_Eei0Dts_PrkGMQ" name="return" type="_eQgkwXt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eXEfwHt_Eei0Dts_PrkGMQ" name="getAnonymousLogger" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_eXEfwXt_Eei0Dts_PrkGMQ" name="resourceBundleName" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eXEfwnt_Eei0Dts_PrkGMQ" name="return" type="_eQgkwXt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eXFG0Ht_Eei0Dts_PrkGMQ" name="getResourceBundle" visibility="public">
+            <ownedParameter xmi:id="_eXFG0Xt_Eei0Dts_PrkGMQ" name="return" type="_eUklZXt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eXFG0nt_Eei0Dts_PrkGMQ" name="getResourceBundleName" visibility="public">
+            <ownedParameter xmi:id="_eXFG03t_Eei0Dts_PrkGMQ" name="return" type="_eUGrUHt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eXFt4Ht_Eei0Dts_PrkGMQ" name="setFilter" visibility="public">
+            <ownedParameter xmi:id="_eXFt4Xt_Eei0Dts_PrkGMQ" name="newFilter" type="_eQbFMHt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eXGU8Ht_Eei0Dts_PrkGMQ" name="getFilter" visibility="public">
+            <ownedParameter xmi:id="_eXGU8Xt_Eei0Dts_PrkGMQ" name="return" type="_eQbFMHt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eXG8AHt_Eei0Dts_PrkGMQ" name="log" visibility="public">
+            <ownedParameter xmi:id="_eXG8AXt_Eei0Dts_PrkGMQ" name="record" type="_eQbsQXt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eXHjEHt_Eei0Dts_PrkGMQ" name="doLog" visibility="private">
+            <ownedParameter xmi:id="_eXHjEXt_Eei0Dts_PrkGMQ" name="lr" type="_eQbsQXt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eXIxMHt_Eei0Dts_PrkGMQ" name="log" visibility="public">
+            <ownedParameter xmi:id="_eXIxMXt_Eei0Dts_PrkGMQ" name="level" type="_eQhL0nt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eXIxMnt_Eei0Dts_PrkGMQ" name="msg" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eXJ_UHt_Eei0Dts_PrkGMQ" name="log" visibility="public">
+            <ownedParameter xmi:id="_eXJ_UXt_Eei0Dts_PrkGMQ" name="level" type="_eQhL0nt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eXJ_Unt_Eei0Dts_PrkGMQ" name="msgSupplier" type="_eXJYQXt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eXKmYHt_Eei0Dts_PrkGMQ" name="log" visibility="public">
+            <ownedParameter xmi:id="_eXKmYXt_Eei0Dts_PrkGMQ" name="level" type="_eQhL0nt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eXKmYnt_Eei0Dts_PrkGMQ" name="msg" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eXKmY3t_Eei0Dts_PrkGMQ" name="param1" type="_eUBy0Xt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eXL0gHt_Eei0Dts_PrkGMQ" name="log" visibility="public">
+            <ownedParameter xmi:id="_eXL0gXt_Eei0Dts_PrkGMQ" name="level" type="_eQhL0nt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eXL0gnt_Eei0Dts_PrkGMQ" name="msg" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eXL0g3t_Eei0Dts_PrkGMQ" name="params" type="_eUBy0Xt_Eei0Dts_PrkGMQ">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eXL0hHt_Eei0Dts_PrkGMQ" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eXL0hXt_Eei0Dts_PrkGMQ"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eXNCoHt_Eei0Dts_PrkGMQ" name="log" visibility="public">
+            <ownedParameter xmi:id="_eXNCoXt_Eei0Dts_PrkGMQ" name="level" type="_eQhL0nt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eXNCont_Eei0Dts_PrkGMQ" name="msg" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eXNCo3t_Eei0Dts_PrkGMQ" name="thrown" type="_eUj-UHt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eXhywHt_Eei0Dts_PrkGMQ" name="log" visibility="public">
+            <ownedParameter xmi:id="_eXhywXt_Eei0Dts_PrkGMQ" name="level" type="_eQhL0nt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eXhywnt_Eei0Dts_PrkGMQ" name="thrown" type="_eUj-UHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eXhyw3t_Eei0Dts_PrkGMQ" name="msgSupplier" type="_eXJYQXt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eXuAAHt_Eei0Dts_PrkGMQ" name="logp" visibility="public">
+            <ownedParameter xmi:id="_eXuAAXt_Eei0Dts_PrkGMQ" name="level" type="_eQhL0nt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eXuAAnt_Eei0Dts_PrkGMQ" name="sourceClass" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eXuAA3t_Eei0Dts_PrkGMQ" name="sourceMethod" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eXuABHt_Eei0Dts_PrkGMQ" name="msg" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eXv1MHt_Eei0Dts_PrkGMQ" name="logp" visibility="public">
+            <ownedParameter xmi:id="_eXv1MXt_Eei0Dts_PrkGMQ" name="level" type="_eQhL0nt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eXv1Mnt_Eei0Dts_PrkGMQ" name="sourceClass" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eXv1M3t_Eei0Dts_PrkGMQ" name="sourceMethod" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eXv1NHt_Eei0Dts_PrkGMQ" name="msgSupplier" type="_eXJYQXt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eXyRcHt_Eei0Dts_PrkGMQ" name="logp" visibility="public">
+            <ownedParameter xmi:id="_eXyRcXt_Eei0Dts_PrkGMQ" name="level" type="_eQhL0nt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eXyRcnt_Eei0Dts_PrkGMQ" name="sourceClass" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eXyRc3t_Eei0Dts_PrkGMQ" name="sourceMethod" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eXyRdHt_Eei0Dts_PrkGMQ" name="msg" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eXyRdXt_Eei0Dts_PrkGMQ" name="param1" type="_eUBy0Xt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eX0tsHt_Eei0Dts_PrkGMQ" name="logp" visibility="public">
+            <ownedParameter xmi:id="_eX0tsXt_Eei0Dts_PrkGMQ" name="level" type="_eQhL0nt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eX0tsnt_Eei0Dts_PrkGMQ" name="sourceClass" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eX0ts3t_Eei0Dts_PrkGMQ" name="sourceMethod" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eX0ttHt_Eei0Dts_PrkGMQ" name="msg" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eX0ttXt_Eei0Dts_PrkGMQ" name="params" type="_eUBy0Xt_Eei0Dts_PrkGMQ">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eX0ttnt_Eei0Dts_PrkGMQ" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eX0tt3t_Eei0Dts_PrkGMQ"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eX3J8Ht_Eei0Dts_PrkGMQ" name="logp" visibility="public">
+            <ownedParameter xmi:id="_eX3J8Xt_Eei0Dts_PrkGMQ" name="level" type="_eQhL0nt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eX3J8nt_Eei0Dts_PrkGMQ" name="sourceClass" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eX3J83t_Eei0Dts_PrkGMQ" name="sourceMethod" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eX3J9Ht_Eei0Dts_PrkGMQ" name="msg" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eX3J9Xt_Eei0Dts_PrkGMQ" name="thrown" type="_eUj-UHt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eX6NQHt_Eei0Dts_PrkGMQ" name="logp" visibility="public">
+            <ownedParameter xmi:id="_eX6NQXt_Eei0Dts_PrkGMQ" name="level" type="_eQhL0nt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eX6NQnt_Eei0Dts_PrkGMQ" name="sourceClass" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eX6NQ3t_Eei0Dts_PrkGMQ" name="sourceMethod" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eX6NRHt_Eei0Dts_PrkGMQ" name="thrown" type="_eUj-UHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eX6NRXt_Eei0Dts_PrkGMQ" name="msgSupplier" type="_eXJYQXt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eX7bYHt_Eei0Dts_PrkGMQ" name="doLog" visibility="private">
+            <ownedParameter xmi:id="_eX7bYXt_Eei0Dts_PrkGMQ" name="lr" type="_eQbsQXt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eX7bYnt_Eei0Dts_PrkGMQ" name="rbname" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eX9QkHt_Eei0Dts_PrkGMQ" name="doLog" visibility="private">
+            <ownedParameter xmi:id="_eX9QkXt_Eei0Dts_PrkGMQ" name="lr" type="_eQbsQXt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eX9Qknt_Eei0Dts_PrkGMQ" name="rb" type="_eUklZXt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eYA68Ht_Eei0Dts_PrkGMQ" name="logrb" visibility="public">
+            <ownedParameter xmi:id="_eYA68Xt_Eei0Dts_PrkGMQ" name="level" type="_eQhL0nt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eYA68nt_Eei0Dts_PrkGMQ" name="sourceClass" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eYA683t_Eei0Dts_PrkGMQ" name="sourceMethod" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eYA69Ht_Eei0Dts_PrkGMQ" name="bundleName" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eYA69Xt_Eei0Dts_PrkGMQ" name="msg" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eYFMYHt_Eei0Dts_PrkGMQ" name="logrb" visibility="public">
+            <ownedParameter xmi:id="_eYFMYXt_Eei0Dts_PrkGMQ" name="level" type="_eQhL0nt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eYFMYnt_Eei0Dts_PrkGMQ" name="sourceClass" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eYFMY3t_Eei0Dts_PrkGMQ" name="sourceMethod" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eYFMZHt_Eei0Dts_PrkGMQ" name="bundleName" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eYFMZXt_Eei0Dts_PrkGMQ" name="msg" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eYFMZnt_Eei0Dts_PrkGMQ" name="param1" type="_eUBy0Xt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eYI2wHt_Eei0Dts_PrkGMQ" name="logrb" visibility="public">
+            <ownedParameter xmi:id="_eYI2wXt_Eei0Dts_PrkGMQ" name="level" type="_eQhL0nt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eYI2wnt_Eei0Dts_PrkGMQ" name="sourceClass" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eYI2w3t_Eei0Dts_PrkGMQ" name="sourceMethod" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eYI2xHt_Eei0Dts_PrkGMQ" name="bundleName" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eYI2xXt_Eei0Dts_PrkGMQ" name="msg" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eYI2xnt_Eei0Dts_PrkGMQ" name="params" type="_eUBy0Xt_Eei0Dts_PrkGMQ">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eYI2x3t_Eei0Dts_PrkGMQ" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eYI2yHt_Eei0Dts_PrkGMQ"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eYMhIHt_Eei0Dts_PrkGMQ" name="logrb" visibility="public">
+            <ownedParameter xmi:id="_eYMhIXt_Eei0Dts_PrkGMQ" name="level" type="_eQhL0nt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eYMhInt_Eei0Dts_PrkGMQ" name="sourceClass" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eYMhI3t_Eei0Dts_PrkGMQ" name="sourceMethod" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eYMhJHt_Eei0Dts_PrkGMQ" name="bundle" type="_eUklZXt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eYMhJXt_Eei0Dts_PrkGMQ" name="msg" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eYMhJnt_Eei0Dts_PrkGMQ" name="params" type="_eUBy0Xt_Eei0Dts_PrkGMQ">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eYMhJ3t_Eei0Dts_PrkGMQ" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eYMhKHt_Eei0Dts_PrkGMQ"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eYO9YHt_Eei0Dts_PrkGMQ" name="logrb" visibility="public">
+            <ownedParameter xmi:id="_eYO9YXt_Eei0Dts_PrkGMQ" name="level" type="_eQhL0nt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eYO9Ynt_Eei0Dts_PrkGMQ" name="sourceClass" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eYO9Y3t_Eei0Dts_PrkGMQ" name="sourceMethod" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eYO9ZHt_Eei0Dts_PrkGMQ" name="bundleName" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eYO9ZXt_Eei0Dts_PrkGMQ" name="msg" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eYO9Znt_Eei0Dts_PrkGMQ" name="thrown" type="_eUj-UHt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eYSAsHt_Eei0Dts_PrkGMQ" name="logrb" visibility="public">
+            <ownedParameter xmi:id="_eYSAsXt_Eei0Dts_PrkGMQ" name="level" type="_eQhL0nt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eYSAsnt_Eei0Dts_PrkGMQ" name="sourceClass" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eYSAs3t_Eei0Dts_PrkGMQ" name="sourceMethod" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eYSAtHt_Eei0Dts_PrkGMQ" name="bundle" type="_eUklZXt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eYSAtXt_Eei0Dts_PrkGMQ" name="msg" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eYSAtnt_Eei0Dts_PrkGMQ" name="thrown" type="_eUj-UHt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eYTO0Ht_Eei0Dts_PrkGMQ" name="entering" visibility="public">
+            <ownedParameter xmi:id="_eYTO0Xt_Eei0Dts_PrkGMQ" name="sourceClass" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eYTO0nt_Eei0Dts_PrkGMQ" name="sourceMethod" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eYUc8Ht_Eei0Dts_PrkGMQ" name="entering" visibility="public">
+            <ownedParameter xmi:id="_eYUc8Xt_Eei0Dts_PrkGMQ" name="sourceClass" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eYUc8nt_Eei0Dts_PrkGMQ" name="sourceMethod" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eYUc83t_Eei0Dts_PrkGMQ" name="param1" type="_eUBy0Xt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eYWSIHt_Eei0Dts_PrkGMQ" name="entering" visibility="public">
+            <ownedParameter xmi:id="_eYWSIXt_Eei0Dts_PrkGMQ" name="sourceClass" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eYWSInt_Eei0Dts_PrkGMQ" name="sourceMethod" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eYWSI3t_Eei0Dts_PrkGMQ" name="params" type="_eUBy0Xt_Eei0Dts_PrkGMQ">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eYWSJHt_Eei0Dts_PrkGMQ" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eYWSJXt_Eei0Dts_PrkGMQ"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eYW5MHt_Eei0Dts_PrkGMQ" name="exiting" visibility="public">
+            <ownedParameter xmi:id="_eYW5MXt_Eei0Dts_PrkGMQ" name="sourceClass" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eYW5Mnt_Eei0Dts_PrkGMQ" name="sourceMethod" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eYYuYHt_Eei0Dts_PrkGMQ" name="exiting" visibility="public">
+            <ownedParameter xmi:id="_eYYuYXt_Eei0Dts_PrkGMQ" name="sourceClass" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eYYuYnt_Eei0Dts_PrkGMQ" name="sourceMethod" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eYYuY3t_Eei0Dts_PrkGMQ" name="result" type="_eUBy0Xt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eYajkHt_Eei0Dts_PrkGMQ" name="throwing" visibility="public">
+            <ownedParameter xmi:id="_eYajkXt_Eei0Dts_PrkGMQ" name="sourceClass" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eYbKoHt_Eei0Dts_PrkGMQ" name="sourceMethod" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eYbKoXt_Eei0Dts_PrkGMQ" name="thrown" type="_eUj-UHt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eYbxsHt_Eei0Dts_PrkGMQ" name="severe" visibility="public">
+            <ownedParameter xmi:id="_eYbxsXt_Eei0Dts_PrkGMQ" name="msg" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eYc_0Ht_Eei0Dts_PrkGMQ" name="warning" visibility="public">
+            <ownedParameter xmi:id="_eYc_0Xt_Eei0Dts_PrkGMQ" name="msg" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eYeN8Ht_Eei0Dts_PrkGMQ" name="info" visibility="public">
+            <ownedParameter xmi:id="_eYeN8Xt_Eei0Dts_PrkGMQ" name="msg" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eYe1AHt_Eei0Dts_PrkGMQ" name="config" visibility="public">
+            <ownedParameter xmi:id="_eYe1AXt_Eei0Dts_PrkGMQ" name="msg" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eYgDIHt_Eei0Dts_PrkGMQ" name="fine" visibility="public">
+            <ownedParameter xmi:id="_eYgDIXt_Eei0Dts_PrkGMQ" name="msg" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eYgqMHt_Eei0Dts_PrkGMQ" name="finer" visibility="public">
+            <ownedParameter xmi:id="_eYgqMXt_Eei0Dts_PrkGMQ" name="msg" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eYhRQHt_Eei0Dts_PrkGMQ" name="finest" visibility="public">
+            <ownedParameter xmi:id="_eYhRQXt_Eei0Dts_PrkGMQ" name="msg" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eYifYHt_Eei0Dts_PrkGMQ" name="severe" visibility="public">
+            <ownedParameter xmi:id="_eYifYXt_Eei0Dts_PrkGMQ" name="msgSupplier" type="_eXJYQXt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eYjGcHt_Eei0Dts_PrkGMQ" name="warning" visibility="public">
+            <ownedParameter xmi:id="_eYjGcXt_Eei0Dts_PrkGMQ" name="msgSupplier" type="_eXJYQXt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eYjtgHt_Eei0Dts_PrkGMQ" name="info" visibility="public">
+            <ownedParameter xmi:id="_eYjtgXt_Eei0Dts_PrkGMQ" name="msgSupplier" type="_eXJYQXt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eYkUkHt_Eei0Dts_PrkGMQ" name="config" visibility="public">
+            <ownedParameter xmi:id="_eYkUkXt_Eei0Dts_PrkGMQ" name="msgSupplier" type="_eXJYQXt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eYlisHt_Eei0Dts_PrkGMQ" name="fine" visibility="public">
+            <ownedParameter xmi:id="_eYlisXt_Eei0Dts_PrkGMQ" name="msgSupplier" type="_eXJYQXt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eYmw0Ht_Eei0Dts_PrkGMQ" name="finer" visibility="public">
+            <ownedParameter xmi:id="_eYmw0Xt_Eei0Dts_PrkGMQ" name="msgSupplier" type="_eXJYQXt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eYn-8Ht_Eei0Dts_PrkGMQ" name="finest" visibility="public">
+            <ownedParameter xmi:id="_eYn-8Xt_Eei0Dts_PrkGMQ" name="msgSupplier" type="_eXJYQXt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eYpNEHt_Eei0Dts_PrkGMQ" name="setLevel" visibility="public">
+            <ownedParameter xmi:id="_eYpNEXt_Eei0Dts_PrkGMQ" name="newLevel" type="_eQhL0nt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eYp0IHt_Eei0Dts_PrkGMQ" name="isLevelInitialized" visibility="package">
+            <ownedParameter xmi:id="_eYp0IXt_Eei0Dts_PrkGMQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eYqbMHt_Eei0Dts_PrkGMQ" name="getLevel" visibility="public">
+            <ownedParameter xmi:id="_eYqbMXt_Eei0Dts_PrkGMQ" name="return" type="_eQhL0nt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eYsQYHt_Eei0Dts_PrkGMQ" name="isLoggable" visibility="public">
+            <ownedParameter xmi:id="_eYsQYXt_Eei0Dts_PrkGMQ" name="level" type="_eQhL0nt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eYsQYnt_Eei0Dts_PrkGMQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eYs3cHt_Eei0Dts_PrkGMQ" name="getName" visibility="public">
+            <ownedParameter xmi:id="_eYs3cXt_Eei0Dts_PrkGMQ" name="return" type="_eUGrUHt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eYuFkHt_Eei0Dts_PrkGMQ" name="addHandler" visibility="public">
+            <ownedParameter xmi:id="_eYuFkXt_Eei0Dts_PrkGMQ" name="handler" type="_eQgkwHt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eYvTsHt_Eei0Dts_PrkGMQ" name="removeHandler" visibility="public">
+            <ownedParameter xmi:id="_eYvTsXt_Eei0Dts_PrkGMQ" name="handler" type="_eQgkwHt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eYv6wHt_Eei0Dts_PrkGMQ" name="getHandlers" visibility="public">
+            <ownedParameter xmi:id="_eYv6wXt_Eei0Dts_PrkGMQ" name="return" type="_eQgkwHt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eYxI4Ht_Eei0Dts_PrkGMQ" name="accessCheckedHandlers" visibility="package">
+            <ownedParameter xmi:id="_eYxI4Xt_Eei0Dts_PrkGMQ" name="return" type="_eQgkwHt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eYxv8Ht_Eei0Dts_PrkGMQ" name="setUseParentHandlers" visibility="public">
+            <ownedParameter xmi:id="_eYxv8Xt_Eei0Dts_PrkGMQ" name="useParentHandlers">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eYyXAHt_Eei0Dts_PrkGMQ" name="getUseParentHandlers" visibility="public">
+            <ownedParameter xmi:id="_eYyXAXt_Eei0Dts_PrkGMQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eYzlIHt_Eei0Dts_PrkGMQ" name="findSystemResourceBundle" visibility="private" isStatic="true">
+            <ownedParameter xmi:id="_eYzlIXt_Eei0Dts_PrkGMQ" name="locale" type="_eW3EYnt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eYzlInt_Eei0Dts_PrkGMQ" name="return" type="_eUklZXt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eY2BYHt_Eei0Dts_PrkGMQ" name="findResourceBundle" visibility="private">
+            <ownedParameter xmi:id="_eY2BYXt_Eei0Dts_PrkGMQ" name="name" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eY2BYnt_Eei0Dts_PrkGMQ" name="useCallersClassLoader">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_eY2BY3t_Eei0Dts_PrkGMQ" name="return" type="_eUklZXt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eY32kHt_Eei0Dts_PrkGMQ" name="setupResourceInfo" visibility="private">
+            <ownedParameter xmi:id="_eY32kXt_Eei0Dts_PrkGMQ" name="name" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eY32knt_Eei0Dts_PrkGMQ" name="callersClass" type="_eV8eYHt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eY5EsHt_Eei0Dts_PrkGMQ" name="setResourceBundle" visibility="public">
+            <ownedParameter xmi:id="_eY5EsXt_Eei0Dts_PrkGMQ" name="bundle" type="_eUklZXt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eY6S0Ht_Eei0Dts_PrkGMQ" name="getParent" visibility="public">
+            <ownedParameter xmi:id="_eY6S0Xt_Eei0Dts_PrkGMQ" name="return" type="_eQgkwXt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eY8IAHt_Eei0Dts_PrkGMQ" name="setParent" visibility="public">
+            <ownedParameter xmi:id="_eY8IAXt_Eei0Dts_PrkGMQ" name="parent" type="_eQgkwXt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eY99MHt_Eei0Dts_PrkGMQ" name="doSetParent" visibility="private">
+            <ownedParameter xmi:id="_eY99MXt_Eei0Dts_PrkGMQ" name="newParent" type="_eQgkwXt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eY_yYHt_Eei0Dts_PrkGMQ" name="removeChildLogger" visibility="package">
+            <ownedParameter xmi:id="_eY_yYXt_Eei0Dts_PrkGMQ" name="child" type="_eY-kQHt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eZAZcHt_Eei0Dts_PrkGMQ" name="updateEffectiveLevel" visibility="private"/>
+          <ownedOperation xmi:id="_eZBAgHt_Eei0Dts_PrkGMQ" name="getEffectiveLoggerBundle" visibility="private">
+            <ownedParameter xmi:id="_eZBAgXt_Eei0Dts_PrkGMQ" name="return" type="_eW0oI3t_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eZDcwHt_Eei0Dts_PrkGMQ" name="access$000" visibility="package" isStatic="true">
+            <ownedParameter xmi:id="_eZDcwXt_Eei0Dts_PrkGMQ" name="return" type="_eW0oI3t_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eZFR8Ht_Eei0Dts_PrkGMQ" name="access$100" visibility="package" isStatic="true">
+            <ownedParameter xmi:id="_eZFR8Xt_Eei0Dts_PrkGMQ" name="return" type="_eW0oI3t_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eZHHIHt_Eei0Dts_PrkGMQ" name="&lt;clinit>" visibility="package" isStatic="true"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_eQhL0nt_Eei0Dts_PrkGMQ" name="Level">
+          <generalization xmi:id="_eZHHIXt_Eei0Dts_PrkGMQ" general="_eUBy0Xt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eZHuMHt_Eei0Dts_PrkGMQ" name="defaultBundle" visibility="private" isStatic="true" type="_eUGrUHt_Eei0Dts_PrkGMQ" isReadOnly="true"/>
+          <ownedAttribute xmi:id="_eZHuMXt_Eei0Dts_PrkGMQ" name="name" visibility="private" type="_eUGrUHt_Eei0Dts_PrkGMQ" isReadOnly="true"/>
+          <ownedAttribute xmi:id="_eZHuMnt_Eei0Dts_PrkGMQ" name="value" visibility="private" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_eZIVQHt_Eei0Dts_PrkGMQ" name="resourceBundleName" visibility="private" type="_eUGrUHt_Eei0Dts_PrkGMQ" isReadOnly="true"/>
+          <ownedAttribute xmi:id="_eZIVQXt_Eei0Dts_PrkGMQ" name="localizedLevelName" visibility="private" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eZIVQnt_Eei0Dts_PrkGMQ" name="cachedLocale" visibility="private" type="_eW3EYnt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eZIVQ3t_Eei0Dts_PrkGMQ" name="OFF" visibility="public" isStatic="true" type="_eQhL0nt_Eei0Dts_PrkGMQ" isReadOnly="true" association="_eaV2NHt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eZI8UHt_Eei0Dts_PrkGMQ" name="SEVERE" visibility="public" isStatic="true" type="_eQhL0nt_Eei0Dts_PrkGMQ" isReadOnly="true" association="_eaVPNnt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eZI8UXt_Eei0Dts_PrkGMQ" name="WARNING" visibility="public" isStatic="true" type="_eQhL0nt_Eei0Dts_PrkGMQ" isReadOnly="true" association="_eaVPN3t_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eZI8Unt_Eei0Dts_PrkGMQ" name="INFO" visibility="public" isStatic="true" type="_eQhL0nt_Eei0Dts_PrkGMQ" isReadOnly="true" association="_eaVPOHt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eZJjYHt_Eei0Dts_PrkGMQ" name="CONFIG" visibility="public" isStatic="true" type="_eQhL0nt_Eei0Dts_PrkGMQ" isReadOnly="true" association="_eaV2MHt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eZJjYXt_Eei0Dts_PrkGMQ" name="FINE" visibility="public" isStatic="true" type="_eQhL0nt_Eei0Dts_PrkGMQ" isReadOnly="true" association="_eaV2MXt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eZJjYnt_Eei0Dts_PrkGMQ" name="FINER" visibility="public" isStatic="true" type="_eQhL0nt_Eei0Dts_PrkGMQ" isReadOnly="true" association="_eaV2Mnt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eZJjY3t_Eei0Dts_PrkGMQ" name="FINEST" visibility="public" isStatic="true" type="_eQhL0nt_Eei0Dts_PrkGMQ" isReadOnly="true" association="_eaV2M3t_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eZKKcHt_Eei0Dts_PrkGMQ" name="ALL" visibility="public" isStatic="true" type="_eQhL0nt_Eei0Dts_PrkGMQ" isReadOnly="true" association="_eaV2NHt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eZKKcXt_Eei0Dts_PrkGMQ" name="serialVersionUID" visibility="private" isStatic="true" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+          </ownedAttribute>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_eQhy4Ht_Eei0Dts_PrkGMQ" name="KnownLevel" visibility="package"/>
+          <ownedOperation xmi:id="_eZL_oHt_Eei0Dts_PrkGMQ" name="getResourceBundleName" visibility="public">
+            <ownedParameter xmi:id="_eZL_oXt_Eei0Dts_PrkGMQ" name="return" type="_eUGrUHt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eZMmsHt_Eei0Dts_PrkGMQ" name="getName" visibility="public">
+            <ownedParameter xmi:id="_eZMmsXt_Eei0Dts_PrkGMQ" name="return" type="_eUGrUHt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eZMmsnt_Eei0Dts_PrkGMQ" name="getLocalizedName" visibility="public">
+            <ownedParameter xmi:id="_eZMms3t_Eei0Dts_PrkGMQ" name="return" type="_eUGrUHt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eZNNwHt_Eei0Dts_PrkGMQ" name="getLevelName" visibility="package">
+            <ownedParameter xmi:id="_eZNNwXt_Eei0Dts_PrkGMQ" name="return" type="_eUGrUHt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eZNNwnt_Eei0Dts_PrkGMQ" name="computeLocalizedLevelName" visibility="private">
+            <ownedParameter xmi:id="_eZNNw3t_Eei0Dts_PrkGMQ" name="newLocale" type="_eW3EYnt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eZNNxHt_Eei0Dts_PrkGMQ" name="return" type="_eUGrUHt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eZN00Ht_Eei0Dts_PrkGMQ" name="getCachedLocalizedLevelName" visibility="package">
+            <ownedParameter xmi:id="_eZN00Xt_Eei0Dts_PrkGMQ" name="return" type="_eUGrUHt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eZN00nt_Eei0Dts_PrkGMQ" name="getLocalizedLevelName" visibility="package">
+            <ownedParameter xmi:id="_eZN003t_Eei0Dts_PrkGMQ" name="return" type="_eUGrUHt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eZN01Ht_Eei0Dts_PrkGMQ" name="findLevel" visibility="package" isStatic="true">
+            <ownedParameter xmi:id="_eZN01Xt_Eei0Dts_PrkGMQ" name="name" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eZN01nt_Eei0Dts_PrkGMQ" name="return" type="_eQhL0nt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eZOb4Ht_Eei0Dts_PrkGMQ" name="toString" visibility="public">
+            <ownedParameter xmi:id="_eZOb4Xt_Eei0Dts_PrkGMQ" name="return" type="_eUGrUHt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eZOb4nt_Eei0Dts_PrkGMQ" name="intValue" visibility="public">
+            <ownedParameter xmi:id="_eZOb43t_Eei0Dts_PrkGMQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eZOb5Ht_Eei0Dts_PrkGMQ" name="readResolve" visibility="private">
+            <ownedParameter xmi:id="_eZOb5Xt_Eei0Dts_PrkGMQ" name="return" type="_eUBy0Xt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eZPC8Ht_Eei0Dts_PrkGMQ" name="parse" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_eZPC8Xt_Eei0Dts_PrkGMQ" name="name" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eZPC8nt_Eei0Dts_PrkGMQ" name="return" type="_eQhL0nt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eZPC83t_Eei0Dts_PrkGMQ" name="equals" visibility="public">
+            <ownedParameter xmi:id="_eZPC9Ht_Eei0Dts_PrkGMQ" name="ox" type="_eUBy0Xt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eZPC9Xt_Eei0Dts_PrkGMQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eZPqAHt_Eei0Dts_PrkGMQ" name="hashCode" visibility="public">
+            <ownedParameter xmi:id="_eZPqAXt_Eei0Dts_PrkGMQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eZQ4IHt_Eei0Dts_PrkGMQ" name="access$000" visibility="package" isStatic="true">
+            <ownedParameter xmi:id="_eZQ4IXt_Eei0Dts_PrkGMQ" name="arg0" type="_eQhL0nt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eZQ4Int_Eei0Dts_PrkGMQ" name="return" type="_eUGrUHt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eZSGQHt_Eei0Dts_PrkGMQ" name="access$100" visibility="package" isStatic="true">
+            <ownedParameter xmi:id="_eZSGQXt_Eei0Dts_PrkGMQ" name="arg0" type="_eQhL0nt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eZSGQnt_Eei0Dts_PrkGMQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eZT7cHt_Eei0Dts_PrkGMQ" name="access$200" visibility="package" isStatic="true">
+            <ownedParameter xmi:id="_eZT7cXt_Eei0Dts_PrkGMQ" name="arg0" type="_eQhL0nt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eZT7cnt_Eei0Dts_PrkGMQ" name="return" type="_eUGrUHt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eZUigHt_Eei0Dts_PrkGMQ" name="&lt;clinit>" visibility="package" isStatic="true"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_eQhy4Xt_Eei0Dts_PrkGMQ" name="LoggingProxyImpl" visibility="package">
+          <generalization xmi:id="_eZVJkHt_Eei0Dts_PrkGMQ" general="_eUBy0Xt_Eei0Dts_PrkGMQ"/>
+          <ownedAttribute xmi:id="_eZVJlXt_Eei0Dts_PrkGMQ" name="INSTANCE" visibility="package" isStatic="true" type="_eZVJlHt_Eei0Dts_PrkGMQ" isReadOnly="true"/>
+          <ownedOperation xmi:id="_eZXl0Ht_Eei0Dts_PrkGMQ" name="getLogger" visibility="public">
+            <ownedParameter xmi:id="_eZXl0Xt_Eei0Dts_PrkGMQ" name="name" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eZXl0nt_Eei0Dts_PrkGMQ" name="return" type="_eUBy0Xt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eZXl03t_Eei0Dts_PrkGMQ" name="getLevel" visibility="public">
+            <ownedParameter xmi:id="_eZXl1Ht_Eei0Dts_PrkGMQ" name="logger" type="_eUBy0Xt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eZXl1Xt_Eei0Dts_PrkGMQ" name="return" type="_eUBy0Xt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eZYM4Ht_Eei0Dts_PrkGMQ" name="setLevel" visibility="public">
+            <ownedParameter xmi:id="_eZYM4Xt_Eei0Dts_PrkGMQ" name="logger" type="_eUBy0Xt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eZYM4nt_Eei0Dts_PrkGMQ" name="newLevel" type="_eUBy0Xt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eZYz8Ht_Eei0Dts_PrkGMQ" name="isLoggable" visibility="public">
+            <ownedParameter xmi:id="_eZYz8Xt_Eei0Dts_PrkGMQ" name="logger" type="_eUBy0Xt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eZYz8nt_Eei0Dts_PrkGMQ" name="level" type="_eUBy0Xt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eZYz83t_Eei0Dts_PrkGMQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eZZbAHt_Eei0Dts_PrkGMQ" name="log" visibility="public">
+            <ownedParameter xmi:id="_eZZbAXt_Eei0Dts_PrkGMQ" name="logger" type="_eUBy0Xt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eZZbAnt_Eei0Dts_PrkGMQ" name="level" type="_eUBy0Xt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eZZbA3t_Eei0Dts_PrkGMQ" name="msg" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eZapIHt_Eei0Dts_PrkGMQ" name="log" visibility="public">
+            <ownedParameter xmi:id="_eZapIXt_Eei0Dts_PrkGMQ" name="logger" type="_eUBy0Xt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eZapInt_Eei0Dts_PrkGMQ" name="level" type="_eUBy0Xt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eZapI3t_Eei0Dts_PrkGMQ" name="msg" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eZapJHt_Eei0Dts_PrkGMQ" name="t" type="_eUj-UHt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eZb3QHt_Eei0Dts_PrkGMQ" name="log" visibility="public">
+            <ownedParameter xmi:id="_eZb3QXt_Eei0Dts_PrkGMQ" name="logger" type="_eUBy0Xt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eZb3Qnt_Eei0Dts_PrkGMQ" name="level" type="_eUBy0Xt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eZb3Q3t_Eei0Dts_PrkGMQ" name="msg" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eZb3RHt_Eei0Dts_PrkGMQ" name="params" type="_eUBy0Xt_Eei0Dts_PrkGMQ">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eZb3RXt_Eei0Dts_PrkGMQ" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eZb3Rnt_Eei0Dts_PrkGMQ"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eZceUHt_Eei0Dts_PrkGMQ" name="getLoggerNames" visibility="public">
+            <ownedParameter xmi:id="_eZceUXt_Eei0Dts_PrkGMQ" name="return" type="_eVGw4Ht_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eZdFYHt_Eei0Dts_PrkGMQ" name="getLoggerLevel" visibility="public">
+            <ownedParameter xmi:id="_eZdFYXt_Eei0Dts_PrkGMQ" name="loggerName" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eZdFYnt_Eei0Dts_PrkGMQ" name="return" type="_eUGrUHt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eZdscHt_Eei0Dts_PrkGMQ" name="setLoggerLevel" visibility="public">
+            <ownedParameter xmi:id="_eZdscXt_Eei0Dts_PrkGMQ" name="loggerName" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eZdscnt_Eei0Dts_PrkGMQ" name="levelName" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eZeTgHt_Eei0Dts_PrkGMQ" name="getParentLoggerName" visibility="public">
+            <ownedParameter xmi:id="_eZeTgXt_Eei0Dts_PrkGMQ" name="loggerName" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eZeTgnt_Eei0Dts_PrkGMQ" name="return" type="_eUGrUHt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eZfhoHt_Eei0Dts_PrkGMQ" name="parseLevel" visibility="public">
+            <ownedParameter xmi:id="_eZfhoXt_Eei0Dts_PrkGMQ" name="levelName" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eZfhont_Eei0Dts_PrkGMQ" name="return" type="_eUBy0Xt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eZgIsHt_Eei0Dts_PrkGMQ" name="getLevelName" visibility="public">
+            <ownedParameter xmi:id="_eZgIsXt_Eei0Dts_PrkGMQ" name="level" type="_eUBy0Xt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eZgIsnt_Eei0Dts_PrkGMQ" name="return" type="_eUGrUHt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eZgIs3t_Eei0Dts_PrkGMQ" name="getLevelValue" visibility="public">
+            <ownedParameter xmi:id="_eZgItHt_Eei0Dts_PrkGMQ" name="level" type="_eUBy0Xt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eZgItXt_Eei0Dts_PrkGMQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eZgvwHt_Eei0Dts_PrkGMQ" name="getProperty" visibility="public">
+            <ownedParameter xmi:id="_eZgvwXt_Eei0Dts_PrkGMQ" name="key" type="_eUGrUHt_Eei0Dts_PrkGMQ"/>
+            <ownedParameter xmi:id="_eZgvwnt_Eei0Dts_PrkGMQ" name="return" type="_eUGrUHt_Eei0Dts_PrkGMQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eZik8Ht_Eei0Dts_PrkGMQ" name="&lt;clinit>" visibility="package" isStatic="true"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_eUH5cXt_Eei0Dts_PrkGMQ" name="FileHandler">
+          <packagedElement xmi:type="uml:DataType" xmi:id="_eUH5cnt_Eei0Dts_PrkGMQ" name="MeteredStream"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_eVwRIHt_Eei0Dts_PrkGMQ" name="LogManager">
+          <packagedElement xmi:type="uml:DataType" xmi:id="_eVwRIXt_Eei0Dts_PrkGMQ" name="LoggerContext"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_eY-kQHt_Eei0Dts_PrkGMQ" name="LoggerWeakRef"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_eW0oInt_Eei0Dts_PrkGMQ" name="Logger">
+          <packagedElement xmi:type="uml:DataType" xmi:id="_eW0oI3t_Eei0Dts_PrkGMQ" name="LoggerBundle"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_eaUoEHt_Eei0Dts_PrkGMQ" memberEnd="_eUiwMHt_Eei0Dts_PrkGMQ _eaUoEXt_Eei0Dts_PrkGMQ">
+          <ownedEnd xmi:id="_eaUoEXt_Eei0Dts_PrkGMQ" name="LogRecord" type="_eQbsQXt_Eei0Dts_PrkGMQ" association="_eaUoEHt_Eei0Dts_PrkGMQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_eaUoEnt_Eei0Dts_PrkGMQ" memberEnd="_eVDtkHt_Eei0Dts_PrkGMQ _eaUoE3t_Eei0Dts_PrkGMQ">
+          <ownedEnd xmi:id="_eaUoE3t_Eei0Dts_PrkGMQ" name="Logging" type="_eQcTUHt_Eei0Dts_PrkGMQ" association="_eaUoEnt_Eei0Dts_PrkGMQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_eaUoFHt_Eei0Dts_PrkGMQ" memberEnd="_eVQh4Xt_Eei0Dts_PrkGMQ _eaUoFXt_Eei0Dts_PrkGMQ">
+          <ownedEnd xmi:id="_eaUoFXt_Eei0Dts_PrkGMQ" name="MemoryHandler" type="_eQc6YHt_Eei0Dts_PrkGMQ" association="_eaUoFHt_Eei0Dts_PrkGMQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_eaUoFnt_Eei0Dts_PrkGMQ" memberEnd="_eVRI8Ht_Eei0Dts_PrkGMQ _eaUoF3t_Eei0Dts_PrkGMQ">
+          <ownedEnd xmi:id="_eaUoF3t_Eei0Dts_PrkGMQ" name="MemoryHandler" type="_eQc6YHt_Eei0Dts_PrkGMQ" association="_eaUoFnt_Eei0Dts_PrkGMQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_eaUoGHt_Eei0Dts_PrkGMQ" memberEnd="_eVRI8Xt_Eei0Dts_PrkGMQ _eaUoGXt_Eei0Dts_PrkGMQ">
+          <ownedEnd xmi:id="_eaUoGXt_Eei0Dts_PrkGMQ" name="MemoryHandler" type="_eQc6YHt_Eei0Dts_PrkGMQ" association="_eaUoGHt_Eei0Dts_PrkGMQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_eaUoGnt_Eei0Dts_PrkGMQ" memberEnd="_eVnuQXt_Eei0Dts_PrkGMQ _eaUoG3t_Eei0Dts_PrkGMQ">
+          <ownedEnd xmi:id="_eaUoG3t_Eei0Dts_PrkGMQ" name="XMLFormatter" type="_eQdhcHt_Eei0Dts_PrkGMQ" association="_eaUoGnt_Eei0Dts_PrkGMQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_eaUoHHt_Eei0Dts_PrkGMQ" memberEnd="_eVvDAHt_Eei0Dts_PrkGMQ _eaUoHXt_Eei0Dts_PrkGMQ">
+          <ownedEnd xmi:id="_eaUoHXt_Eei0Dts_PrkGMQ" name="LogManager" type="_eQeIgHt_Eei0Dts_PrkGMQ" association="_eaUoHHt_Eei0Dts_PrkGMQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_eaVPIHt_Eei0Dts_PrkGMQ" memberEnd="_eVvDA3t_Eei0Dts_PrkGMQ _eaVPIXt_Eei0Dts_PrkGMQ">
+          <ownedEnd xmi:id="_eaVPIXt_Eei0Dts_PrkGMQ" name="LogManager" type="_eQeIgHt_Eei0Dts_PrkGMQ" association="_eaVPIHt_Eei0Dts_PrkGMQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_eaVPInt_Eei0Dts_PrkGMQ" memberEnd="_eVwRJHt_Eei0Dts_PrkGMQ _eW1PMXt_Eei0Dts_PrkGMQ"/>
+        <packagedElement xmi:type="uml:Association" xmi:id="_eaVPI3t_Eei0Dts_PrkGMQ" memberEnd="_eVytYnt_Eei0Dts_PrkGMQ _eaVPJHt_Eei0Dts_PrkGMQ">
+          <ownedEnd xmi:id="_eaVPJHt_Eei0Dts_PrkGMQ" name="LogManager" type="_eQeIgHt_Eei0Dts_PrkGMQ" association="_eaVPI3t_Eei0Dts_PrkGMQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_eaVPJXt_Eei0Dts_PrkGMQ" memberEnd="_eWq3Int_Eei0Dts_PrkGMQ _eaVPJnt_Eei0Dts_PrkGMQ">
+          <ownedEnd xmi:id="_eaVPJnt_Eei0Dts_PrkGMQ" name="Handler" type="_eQgkwHt_Eei0Dts_PrkGMQ" association="_eaVPJXt_Eei0Dts_PrkGMQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_eaVPJ3t_Eei0Dts_PrkGMQ" memberEnd="_eWreMHt_Eei0Dts_PrkGMQ _eaVPKHt_Eei0Dts_PrkGMQ">
+          <ownedEnd xmi:id="_eaVPKHt_Eei0Dts_PrkGMQ" name="Handler" type="_eQgkwHt_Eei0Dts_PrkGMQ" association="_eaVPJ3t_Eei0Dts_PrkGMQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_eaVPKXt_Eei0Dts_PrkGMQ" memberEnd="_eWreMXt_Eei0Dts_PrkGMQ _eaVPKnt_Eei0Dts_PrkGMQ">
+          <ownedEnd xmi:id="_eaVPKnt_Eei0Dts_PrkGMQ" name="Handler" type="_eQgkwHt_Eei0Dts_PrkGMQ" association="_eaVPKXt_Eei0Dts_PrkGMQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_eaVPK3t_Eei0Dts_PrkGMQ" memberEnd="_eWreMnt_Eei0Dts_PrkGMQ _eaVPLHt_Eei0Dts_PrkGMQ">
+          <ownedEnd xmi:id="_eaVPLHt_Eei0Dts_PrkGMQ" name="Handler" type="_eQgkwHt_Eei0Dts_PrkGMQ" association="_eaVPK3t_Eei0Dts_PrkGMQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_eaVPLXt_Eei0Dts_PrkGMQ" memberEnd="_eWreM3t_Eei0Dts_PrkGMQ _eaVPLnt_Eei0Dts_PrkGMQ">
+          <ownedEnd xmi:id="_eaVPLnt_Eei0Dts_PrkGMQ" name="Handler" type="_eQgkwHt_Eei0Dts_PrkGMQ" association="_eaVPLXt_Eei0Dts_PrkGMQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_eaVPL3t_Eei0Dts_PrkGMQ" memberEnd="_eW0BEXt_Eei0Dts_PrkGMQ _eaVPMHt_Eei0Dts_PrkGMQ">
+          <ownedEnd xmi:id="_eaVPMHt_Eei0Dts_PrkGMQ" name="Logger" type="_eQgkwXt_Eei0Dts_PrkGMQ" association="_eaVPL3t_Eei0Dts_PrkGMQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_eaVPMXt_Eei0Dts_PrkGMQ" memberEnd="_eW2dUnt_Eei0Dts_PrkGMQ _eaVPMnt_Eei0Dts_PrkGMQ">
+          <ownedEnd xmi:id="_eaVPMnt_Eei0Dts_PrkGMQ" name="Logger" type="_eQgkwXt_Eei0Dts_PrkGMQ" association="_eaVPMXt_Eei0Dts_PrkGMQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_eaVPM3t_Eei0Dts_PrkGMQ" memberEnd="_eW3rcXt_Eei0Dts_PrkGMQ _eW6HsHt_Eei0Dts_PrkGMQ"/>
+        <packagedElement xmi:type="uml:Association" xmi:id="_eaVPNHt_Eei0Dts_PrkGMQ" memberEnd="_eW4Shnt_Eei0Dts_PrkGMQ _eaVPNXt_Eei0Dts_PrkGMQ">
+          <ownedEnd xmi:id="_eaVPNXt_Eei0Dts_PrkGMQ" name="Logger" type="_eQgkwXt_Eei0Dts_PrkGMQ" association="_eaVPNHt_Eei0Dts_PrkGMQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_eaVPNnt_Eei0Dts_PrkGMQ" memberEnd="_eZI8UHt_Eei0Dts_PrkGMQ"/>
+        <packagedElement xmi:type="uml:Association" xmi:id="_eaVPN3t_Eei0Dts_PrkGMQ" memberEnd="_eZI8UXt_Eei0Dts_PrkGMQ"/>
+        <packagedElement xmi:type="uml:Association" xmi:id="_eaVPOHt_Eei0Dts_PrkGMQ" memberEnd="_eZI8Unt_Eei0Dts_PrkGMQ"/>
+        <packagedElement xmi:type="uml:Association" xmi:id="_eaV2MHt_Eei0Dts_PrkGMQ" memberEnd="_eZJjYHt_Eei0Dts_PrkGMQ"/>
+        <packagedElement xmi:type="uml:Association" xmi:id="_eaV2MXt_Eei0Dts_PrkGMQ" memberEnd="_eZJjYXt_Eei0Dts_PrkGMQ"/>
+        <packagedElement xmi:type="uml:Association" xmi:id="_eaV2Mnt_Eei0Dts_PrkGMQ" memberEnd="_eZJjYnt_Eei0Dts_PrkGMQ"/>
+        <packagedElement xmi:type="uml:Association" xmi:id="_eaV2M3t_Eei0Dts_PrkGMQ" memberEnd="_eZJjY3t_Eei0Dts_PrkGMQ"/>
+        <packagedElement xmi:type="uml:Association" xmi:id="_eaV2NHt_Eei0Dts_PrkGMQ" memberEnd="_eZKKcHt_Eei0Dts_PrkGMQ _eZIVQ3t_Eei0Dts_PrkGMQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_eUMK4Ht_Eei0Dts_PrkGMQ" name="Set&lt;java">
+        <packagedElement xmi:type="uml:Package" xmi:id="_eUMK4Xt_Eei0Dts_PrkGMQ" name="lang">
+          <packagedElement xmi:type="uml:DataType" xmi:id="_eUMK4nt_Eei0Dts_PrkGMQ" name="String>"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_eUhiEXt_Eei0Dts_PrkGMQ" name="concurrent">
+        <packagedElement xmi:type="uml:Package" xmi:id="_eUhiEnt_Eei0Dts_PrkGMQ" name="atomic">
+          <packagedElement xmi:type="uml:DataType" xmi:id="_eUhiE3t_Eei0Dts_PrkGMQ" name="AtomicLong"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_eUiJIXt_Eei0Dts_PrkGMQ" name="AtomicInteger"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_eW12QHt_Eei0Dts_PrkGMQ" name="CopyOnWriteArrayList&lt;java">
+          <packagedElement xmi:type="uml:Package" xmi:id="_eW12QXt_Eei0Dts_PrkGMQ" name="util">
+            <packagedElement xmi:type="uml:Package" xmi:id="_eW12Qnt_Eei0Dts_PrkGMQ" name="logging">
+              <packagedElement xmi:type="uml:DataType" xmi:id="_eW12Q3t_Eei0Dts_PrkGMQ" name="Handler>"/>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_eUklZXt_Eei0Dts_PrkGMQ" name="ResourceBundle"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_eVGw4Ht_Eei0Dts_PrkGMQ" name="List"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_eVX2oXt_Eei0Dts_PrkGMQ" name="Date"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_eVvDAXt_Eei0Dts_PrkGMQ" name="Properties"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_eVvqEHt_Eei0Dts_PrkGMQ" name="Map&lt;java">
+        <packagedElement xmi:type="uml:Package" xmi:id="_eVvqEXt_Eei0Dts_PrkGMQ" name="lang">
+          <packagedElement xmi:type="uml:Package" xmi:id="_eVvqEnt_Eei0Dts_PrkGMQ" name="Object,java">
+            <packagedElement xmi:type="uml:Package" xmi:id="_eVvqE3t_Eei0Dts_PrkGMQ" name="lang">
+              <packagedElement xmi:type="uml:DataType" xmi:id="_eVvqFHt_Eei0Dts_PrkGMQ" name="Integer>"/>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_eVxfQHt_Eei0Dts_PrkGMQ" name="WeakHashMap&lt;java">
+        <packagedElement xmi:type="uml:Package" xmi:id="_eVxfQXt_Eei0Dts_PrkGMQ" name="lang">
+          <packagedElement xmi:type="uml:Package" xmi:id="_eVxfQnt_Eei0Dts_PrkGMQ" name="Object,java">
+            <packagedElement xmi:type="uml:Package" xmi:id="_eVxfQ3t_Eei0Dts_PrkGMQ" name="util">
+              <packagedElement xmi:type="uml:Package" xmi:id="_eVxfRHt_Eei0Dts_PrkGMQ" name="logging">
+                <packagedElement xmi:type="uml:Package" xmi:id="_eVxfRXt_Eei0Dts_PrkGMQ" name="LogManager">
+                  <packagedElement xmi:type="uml:DataType" xmi:id="_eVxfRnt_Eei0Dts_PrkGMQ" name="LoggerContext>"/>
+                </packagedElement>
+              </packagedElement>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_eWBW43t_Eei0Dts_PrkGMQ" name="Enumeration"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_eW3EYnt_Eei0Dts_PrkGMQ" name="Locale"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_eW4SgHt_Eei0Dts_PrkGMQ" name="ArrayList&lt;java">
+        <packagedElement xmi:type="uml:Package" xmi:id="_eW4SgXt_Eei0Dts_PrkGMQ" name="util">
+          <packagedElement xmi:type="uml:Package" xmi:id="_eW4Sgnt_Eei0Dts_PrkGMQ" name="logging">
+            <packagedElement xmi:type="uml:Package" xmi:id="_eW4Sg3t_Eei0Dts_PrkGMQ" name="LogManager">
+              <packagedElement xmi:type="uml:DataType" xmi:id="_eW4ShHt_Eei0Dts_PrkGMQ" name="LoggerWeakRef>"/>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_eXJYQHt_Eei0Dts_PrkGMQ" name="function">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_eXJYQXt_Eei0Dts_PrkGMQ" name="Supplier"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_eUBy0Ht_Eei0Dts_PrkGMQ" name="lang">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_eUBy0Xt_Eei0Dts_PrkGMQ" name="Object"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_eUGrUHt_Eei0Dts_PrkGMQ" name="String"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_eUGrUXt_Eei0Dts_PrkGMQ" name="Exception"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_eUiJI3t_Eei0Dts_PrkGMQ" name="ThreadLocal&lt;java">
+        <packagedElement xmi:type="uml:Package" xmi:id="_eUiJJHt_Eei0Dts_PrkGMQ" name="lang">
+          <packagedElement xmi:type="uml:DataType" xmi:id="_eUiJJXt_Eei0Dts_PrkGMQ" name="Integer>"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_eUj-UHt_Eei0Dts_PrkGMQ" name="Throwable"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_eVqKgHt_Eei0Dts_PrkGMQ" name="StringBuilder"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_eVyGUHt_Eei0Dts_PrkGMQ" name="ref">
+        <packagedElement xmi:type="uml:Package" xmi:id="_eVyGUXt_Eei0Dts_PrkGMQ" name="ReferenceQueue&lt;java">
+          <packagedElement xmi:type="uml:Package" xmi:id="_eVyGUnt_Eei0Dts_PrkGMQ" name="util">
+            <packagedElement xmi:type="uml:Package" xmi:id="_eVyGU3t_Eei0Dts_PrkGMQ" name="logging">
+              <packagedElement xmi:type="uml:DataType" xmi:id="_eVyGVHt_Eei0Dts_PrkGMQ" name="Logger>"/>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_eWmlsHt_Eei0Dts_PrkGMQ" name="ReferenceQueue"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_eW45kHt_Eei0Dts_PrkGMQ" name="WeakReference&lt;java">
+          <packagedElement xmi:type="uml:Package" xmi:id="_eW45kXt_Eei0Dts_PrkGMQ" name="lang">
+            <packagedElement xmi:type="uml:DataType" xmi:id="_eW45knt_Eei0Dts_PrkGMQ" name="ClassLoader>"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_eV4M8Ht_Eei0Dts_PrkGMQ" name="Void"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_eV8eYHt_Eei0Dts_PrkGMQ" name="Class"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_eW_AMnt_Eei0Dts_PrkGMQ" name="ClassLoader"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_eUJuoHt_Eei0Dts_PrkGMQ" name="nio">
+      <packagedElement xmi:type="uml:Package" xmi:id="_eUJuoXt_Eei0Dts_PrkGMQ" name="channels">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_eUJuont_Eei0Dts_PrkGMQ" name="FileChannel"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_eURDYHt_Eei0Dts_PrkGMQ" name="file">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_eURDYXt_Eei0Dts_PrkGMQ" name="Path"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_eUKVsHt_Eei0Dts_PrkGMQ" name="io">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_eUKVsXt_Eei0Dts_PrkGMQ" name="File"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_eU1EEHt_Eei0Dts_PrkGMQ" name="ObjectOutputStream"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_eU1rIHt_Eei0Dts_PrkGMQ" name="ObjectInputStream"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_eVhAkXt_Eei0Dts_PrkGMQ" name="OutputStream"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_eVhnoHt_Eei0Dts_PrkGMQ" name="Writer"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_eWDzI3t_Eei0Dts_PrkGMQ" name="InputStream"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_eVcvIHt_Eei0Dts_PrkGMQ" name="net">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_eVcvIXt_Eei0Dts_PrkGMQ" name="Socket"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_eVt043t_Eei0Dts_PrkGMQ" name="security">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_eVt05Ht_Eei0Dts_PrkGMQ" name="BasicPermission"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_eVytYHt_Eei0Dts_PrkGMQ" name="Permission"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_eV5bE3t_Eei0Dts_PrkGMQ" name="beans">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_eV5bFHt_Eei0Dts_PrkGMQ" name="PropertyChangeListener"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_eZVJkXt_Eei0Dts_PrkGMQ" name="sun">
+    <packagedElement xmi:type="uml:Package" xmi:id="_eZVJknt_Eei0Dts_PrkGMQ" name="util">
+      <packagedElement xmi:type="uml:Package" xmi:id="_eZVJk3t_Eei0Dts_PrkGMQ" name="logging">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_eZVJlHt_Eei0Dts_PrkGMQ" name="LoggingProxy"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
