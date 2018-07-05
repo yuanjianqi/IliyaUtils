@@ -4,7 +4,7 @@
 * 
 * @Title: LogUtil.java 
 * @Package com.yuan.iliya.main.log 
-* @Description: TODO
+* @Description: 关于JUL的一些操作，如果要获取Logger不应该在此类获取。应该从LogFactory获取
 * @author Iliya Kaslana    
 * @date 2018年6月29日 下午5:11:20 
 * @version V1.0   
@@ -19,6 +19,7 @@ import java.util.Date;
 import java.util.logging.ConsoleHandler;
 import java.util.logging.FileHandler;
 import java.util.logging.Formatter;
+import java.util.logging.Handler;
 import java.util.logging.Level;
 import java.util.logging.LogManager;
 import java.util.logging.LogRecord;
@@ -42,7 +43,8 @@ public class LogUtil {
 	public static Logger getLogger(Class<?> clazz, Level level){
 		Logger logger = Logger.getLogger(clazz.toString());
 		logger.setLevel(level);
-		
+		logger.setUseParentHandlers(false);
+		removeHandlers(logger);
 		return logger;
 		
 	}
@@ -132,5 +134,11 @@ public class LogUtil {
 		return (LogFactory.class.getResource("/").getPath()).substring(1);
 	}
 	
+	public static void removeHandlers(Logger logger){
+		for (Handler handler : logger.getHandlers()) {
+			logger.removeHandler(handler);
+			
+		}
+	}
 
 }
